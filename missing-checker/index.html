@@ -47,10 +47,9 @@
         '育婷',
     ]
     var check_list = new Array(name_list.length).fill(0)
-    console.log(check_list)
     var line_text_area = document.querySelector('.LINE-text-area')
-    var line_text_arr = line_text_area.value.split(/[0-9]{2}:[0-9]{2} /)
     document.querySelector('.submit-btn').addEventListener('click', (e) => {
+        var line_text_arr = line_text_area.value.split(/[0-9]{2}:[0-9]{2} /)
         for (var i = 0; i < line_text_arr.length; i++) {
             aline = line_text_arr[i].split('\n')
             name_line = aline[0].split(' ')
@@ -68,7 +67,6 @@
         for (var ni = 0; ni < name_list.length; ni++) {
             if (!check_list[ni]) {
                 output_text_arr.push(name_list[ni])
-                console.log(name_list[ni])
             }
         }
         document.querySelector('.output-textarea').textContent = output_text_arr.join(' ')
