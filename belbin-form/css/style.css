@@ -11,6 +11,7 @@
     --input-submit-active-background-color: #2e4642;
     --max-form-width: 640px;
     --section-max-width: 640px;
+    --input-text-width: 160px;
 
     --section-border-width: 1px;
     --question-border-width: 2px;
@@ -70,7 +71,7 @@ input[type='radio'] {
     height: 20px;
 }
 input[type='text'] {
-    width: 160px;
+    width: var(--input-text-width);
     border: none;
     font-size: var(--option-font-size);
     background: transparent;
@@ -162,7 +163,7 @@ fieldset.section > .content-wrapper {
 }
 .option-wrapper > .label {
     display: grid;
-    grid-template-columns: fit-content(100px) 200px;
+    grid-template-columns: fit-content(100px) var(--input-text-width);
     align-items: center;
 }
 
@@ -191,8 +192,7 @@ fieldset.section > .content-wrapper {
 
         --title-font-size: 1.25rem;
         --section-child-padding: 20px;
-    }
-    input[type='text'] {
-        width: 120px;
+
+        --input-text-width: 120px;
     }
 }
