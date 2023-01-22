@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <form
+            name="main-form"
+            action="https://script.google.com/macros/s/AKfycbz5T2_9ydrBasHdKvrJs-XaiZ9Zv_ackazchyJ-sWbXjnJ4NBAmm0EtZMMuwb_KenYnzQ/exec"
+            method="post"
+            target="hidden_iframe"
+            id="main-form"
+            onsubmit="return checkForm()"
+        >
+            <input type="hidden" name="method" value="write" />
+            <fieldset class="section beginning-section">
+                <div class="title-wrapper">
+                    <p class="title">Belbin 人格特質覺知量表</p>
+                    <p class="comment">
+                        本量表共有七大題，每題均有 10 分，請判斷每一題中 A-H (共 8 題) 哪些題項最符合您的行為描述後，<b
+                            >將總分 10 分完全分配在每一大題的八個項目中</b
+                        >，每一個分數皆是整數，如有不適合您的描述可以給予零分，請避免給予一題 10 分或每題 1 分。
+                    </p>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">基本資料</p>
+                    <!-- <p class="comment"></p> -->
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">您的姓名：</p>
+                        <input type="text" name="name" id="name" placeholder="您的回答" />
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">您的學號：</p>
+                        <input type="text" name="name" id="name" placeholder="您的回答" />
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">我們想知道您的基礎背景對於人格特質的影響，請問您是什麼學系的學生?</p>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-0" name="department" value="" />
+                            <label for="department-0">機械與材料工程學系</label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-1" name="department" value="" />
+                            <label for="department-1">化學工程與生物科技學系 </label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-2" name="department" value="" />
+                            <label for="department-2">工程學院學士班 (大一不分系)</label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-3" name="department" value="" />
+                            <label for="department-3">工業設計學系</label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-4" name="department" value="" />
+                            <label for="department-4">媒體設計學系 A 班 (互動媒體設計組)</label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-5" name="department" value="" />
+                            <label for="department-5">媒體設計學系 B 班 (數位遊戲設計組)</label>
+                        </div>
+                        <div class="option-wrapper">
+                            <input type="radio" id="department-6" name="department" value="" />
+                            <div class="label">
+                                <label for="department-6">其他：</label>
+                                <input type="text" name="department" id="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">
+                            您的社會設計班級組別？ <br />
+                            根據課程代碼（Y1000A~Y1000J），若是A班第一組請填A1<br />
+                            【尚未分組請填無】
+                        </p>
+                        <input type="text" name="name" id="name" placeholder="範例：Y1000A" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">一、我認為我能為團隊做出的貢獻是：</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 我能很快地發現並把握住新的機會。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-1-0" name="q1_1" value="0" checked />
+                            <input type="radio" id="r1-1-1" name="q1_1" value="1" />
+                            <input type="radio" id="r1-1-2" name="q1_1" value="2" />
+                            <input type="radio" id="r1-1-3" name="q1_1" value="3" />
+                            <input type="radio" id="r1-1-4" name="q1_1" value="4" />
+                            <input type="radio" id="r1-1-5" name="q1_1" value="5" />
+                            <input type="radio" id="r1-1-6" name="q1_1" value="6" />
+                            <input type="radio" id="r1-1-7" name="q1_1" value="7" />
+                            <input type="radio" id="r1-1-8" name="q1_1" value="8" />
+                            <input type="radio" id="r1-1-9" name="q1_1" value="9" />
+                            <input type="radio" id="r1-1-10" name="q1_1" value="10" />
+                            <label for="r1-1-0">0</label>
+                            <label for="r1-1-1">1</label>
+                            <label for="r1-1-2">2</label>
+                            <label for="r1-1-3">3</label>
+                            <label for="r1-1-4">4</label>
+                            <label for="r1-1-5">5</label>
+                            <label for="r1-1-6">6</label>
+                            <label for="r1-1-7">7</label>
+                            <label for="r1-1-8">8</label>
+                            <label for="r1-1-9">9</label>
+                            <label for="r1-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我能與各種類型的人一起共同合作。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-2-0" name="q1_2" value="0" checked />
+                            <input type="radio" id="r1-2-1" name="q1_2" value="1" />
+                            <input type="radio" id="r1-2-2" name="q1_2" value="2" />
+                            <input type="radio" id="r1-2-3" name="q1_2" value="3" />
+                            <input type="radio" id="r1-2-4" name="q1_2" value="4" />
+                            <input type="radio" id="r1-2-5" name="q1_2" value="5" />
+                            <input type="radio" id="r1-2-6" name="q1_2" value="6" />
+                            <input type="radio" id="r1-2-7" name="q1_2" value="7" />
+                            <input type="radio" id="r1-2-8" name="q1_2" value="8" />
+                            <input type="radio" id="r1-2-9" name="q1_2" value="9" />
+                            <input type="radio" id="r1-2-10" name="q1_2" value="10" />
+                            <label for="r1-2-0">0</label>
+                            <label for="r1-2-1">1</label>
+                            <label for="r1-2-2">2</label>
+                            <label for="r1-2-3">3</label>
+                            <label for="r1-2-4">4</label>
+                            <label for="r1-2-5">5</label>
+                            <label for="r1-2-6">6</label>
+                            <label for="r1-2-7">7</label>
+                            <label for="r1-2-8">8</label>
+                            <label for="r1-2-9">9</label>
+                            <label for="r1-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 我天生就愛出主意。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-3-0" name="q1_3" value="0" checked />
+                            <input type="radio" id="r1-3-1" name="q1_3" value="1" />
+                            <input type="radio" id="r1-3-2" name="q1_3" value="2" />
+                            <input type="radio" id="r1-3-3" name="q1_3" value="3" />
+                            <input type="radio" id="r1-3-4" name="q1_3" value="4" />
+                            <input type="radio" id="r1-3-5" name="q1_3" value="5" />
+                            <input type="radio" id="r1-3-6" name="q1_3" value="6" />
+                            <input type="radio" id="r1-3-7" name="q1_3" value="7" />
+                            <input type="radio" id="r1-3-8" name="q1_3" value="8" />
+                            <input type="radio" id="r1-3-9" name="q1_3" value="9" />
+                            <input type="radio" id="r1-3-10" name="q1_3" value="10" />
+                            <label for="r1-3-0">0</label>
+                            <label for="r1-3-1">1</label>
+                            <label for="r1-3-2">2</label>
+                            <label for="r1-3-3">3</label>
+                            <label for="r1-3-4">4</label>
+                            <label for="r1-3-5">5</label>
+                            <label for="r1-3-6">6</label>
+                            <label for="r1-3-7">7</label>
+                            <label for="r1-3-8">8</label>
+                            <label for="r1-3-9">9</label>
+                            <label for="r1-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 當發現某些人對實現團隊目標很有貢獻時，我可及時推薦他們。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-4-0" name="q1_4" value="0" checked />
+                            <input type="radio" id="r1-4-1" name="q1_4" value="1" />
+                            <input type="radio" id="r1-4-2" name="q1_4" value="2" />
+                            <input type="radio" id="r1-4-3" name="q1_4" value="3" />
+                            <input type="radio" id="r1-4-4" name="q1_4" value="4" />
+                            <input type="radio" id="r1-4-5" name="q1_4" value="5" />
+                            <input type="radio" id="r1-4-6" name="q1_4" value="6" />
+                            <input type="radio" id="r1-4-7" name="q1_4" value="7" />
+                            <input type="radio" id="r1-4-8" name="q1_4" value="8" />
+                            <input type="radio" id="r1-4-9" name="q1_4" value="9" />
+                            <input type="radio" id="r1-4-10" name="q1_4" value="10" />
+                            <label for="r1-4-0">0</label>
+                            <label for="r1-4-1">1</label>
+                            <label for="r1-4-2">2</label>
+                            <label for="r1-4-3">3</label>
+                            <label for="r1-4-4">4</label>
+                            <label for="r1-4-5">5</label>
+                            <label for="r1-4-6">6</label>
+                            <label for="r1-4-7">7</label>
+                            <label for="r1-4-8">8</label>
+                            <label for="r1-4-9">9</label>
+                            <label for="r1-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 我堅持到底的精神，促使我能有效率的完成事情。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-5-0" name="q1_5" value="0" checked />
+                            <input type="radio" id="r1-5-1" name="q1_5" value="1" />
+                            <input type="radio" id="r1-5-2" name="q1_5" value="2" />
+                            <input type="radio" id="r1-5-3" name="q1_5" value="3" />
+                            <input type="radio" id="r1-5-4" name="q1_5" value="4" />
+                            <input type="radio" id="r1-5-5" name="q1_5" value="5" />
+                            <input type="radio" id="r1-5-6" name="q1_5" value="6" />
+                            <input type="radio" id="r1-5-7" name="q1_5" value="7" />
+                            <input type="radio" id="r1-5-8" name="q1_5" value="8" />
+                            <input type="radio" id="r1-5-9" name="q1_5" value="9" />
+                            <input type="radio" id="r1-5-10" name="q1_5" value="10" />
+                            <label for="r1-5-0">0</label>
+                            <label for="r1-5-1">1</label>
+                            <label for="r1-5-2">2</label>
+                            <label for="r1-5-3">3</label>
+                            <label for="r1-5-4">4</label>
+                            <label for="r1-5-5">5</label>
+                            <label for="r1-5-6">6</label>
+                            <label for="r1-5-7">7</label>
+                            <label for="r1-5-8">8</label>
+                            <label for="r1-5-9">9</label>
+                            <label for="r1-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 如果最終能獲得有價值的結果，我能接受暫時不受歡迎的感受。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-6-0" name="q1_6" value="0" checked />
+                            <input type="radio" id="r1-6-1" name="q1_6" value="1" />
+                            <input type="radio" id="r1-6-2" name="q1_6" value="2" />
+                            <input type="radio" id="r1-6-3" name="q1_6" value="3" />
+                            <input type="radio" id="r1-6-4" name="q1_6" value="4" />
+                            <input type="radio" id="r1-6-5" name="q1_6" value="5" />
+                            <input type="radio" id="r1-6-6" name="q1_6" value="6" />
+                            <input type="radio" id="r1-6-7" name="q1_6" value="7" />
+                            <input type="radio" id="r1-6-8" name="q1_6" value="8" />
+                            <input type="radio" id="r1-6-9" name="q1_6" value="9" />
+                            <input type="radio" id="r1-6-10" name="q1_6" value="10" />
+                            <label for="r1-6-0">0</label>
+                            <label for="r1-6-1">1</label>
+                            <label for="r1-6-2">2</label>
+                            <label for="r1-6-3">3</label>
+                            <label for="r1-6-4">4</label>
+                            <label for="r1-6-5">5</label>
+                            <label for="r1-6-6">6</label>
+                            <label for="r1-6-7">7</label>
+                            <label for="r1-6-8">8</label>
+                            <label for="r1-6-9">9</label>
+                            <label for="r1-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我通常知道自己正在做的事是實際可執行的。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-7-0" name="q1_7" value="0" checked />
+                            <input type="radio" id="r1-7-1" name="q1_7" value="1" />
+                            <input type="radio" id="r1-7-2" name="q1_7" value="2" />
+                            <input type="radio" id="r1-7-3" name="q1_7" value="3" />
+                            <input type="radio" id="r1-7-4" name="q1_7" value="4" />
+                            <input type="radio" id="r1-7-5" name="q1_7" value="5" />
+                            <input type="radio" id="r1-7-6" name="q1_7" value="6" />
+                            <input type="radio" id="r1-7-7" name="q1_7" value="7" />
+                            <input type="radio" id="r1-7-8" name="q1_7" value="8" />
+                            <input type="radio" id="r1-7-9" name="q1_7" value="9" />
+                            <input type="radio" id="r1-7-10" name="q1_7" value="10" />
+                            <label for="r1-7-0">0</label>
+                            <label for="r1-7-1">1</label>
+                            <label for="r1-7-2">2</label>
+                            <label for="r1-7-3">3</label>
+                            <label for="r1-7-4">4</label>
+                            <label for="r1-7-5">5</label>
+                            <label for="r1-7-6">6</label>
+                            <label for="r1-7-7">7</label>
+                            <label for="r1-7-8">8</label>
+                            <label for="r1-7-9">9</label>
+                            <label for="r1-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 我能提出合理且公正的任務規劃，或是可替代的其他建議。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r1-8-0" name="q1_8" value="0" checked />
+                            <input type="radio" id="r1-8-1" name="q1_8" value="1" />
+                            <input type="radio" id="r1-8-2" name="q1_8" value="2" />
+                            <input type="radio" id="r1-8-3" name="q1_8" value="3" />
+                            <input type="radio" id="r1-8-4" name="q1_8" value="4" />
+                            <input type="radio" id="r1-8-5" name="q1_8" value="5" />
+                            <input type="radio" id="r1-8-6" name="q1_8" value="6" />
+                            <input type="radio" id="r1-8-7" name="q1_8" value="7" />
+                            <input type="radio" id="r1-8-8" name="q1_8" value="8" />
+                            <input type="radio" id="r1-8-9" name="q1_8" value="9" />
+                            <input type="radio" id="r1-8-10" name="q1_8" value="10" />
+                            <label for="r1-8-0">0</label>
+                            <label for="r1-8-1">1</label>
+                            <label for="r1-8-2">2</label>
+                            <label for="r1-8-3">3</label>
+                            <label for="r1-8-4">4</label>
+                            <label for="r1-8-5">5</label>
+                            <label for="r1-8-6">6</label>
+                            <label for="r1-8-7">7</label>
+                            <label for="r1-8-8">8</label>
+                            <label for="r1-8-9">9</label>
+                            <label for="r1-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">二、在團隊中，我可能有的弱點是：</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 如果團隊討論時沒有良好的組織規劃和主導，我會感到不放心。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-1-0" name="q2_1" value="0" checked />
+                            <input type="radio" id="r2-1-1" name="q2_1" value="1" />
+                            <input type="radio" id="r2-1-2" name="q2_1" value="2" />
+                            <input type="radio" id="r2-1-3" name="q2_1" value="3" />
+                            <input type="radio" id="r2-1-4" name="q2_1" value="4" />
+                            <input type="radio" id="r2-1-5" name="q2_1" value="5" />
+                            <input type="radio" id="r2-1-6" name="q2_1" value="6" />
+                            <input type="radio" id="r2-1-7" name="q2_1" value="7" />
+                            <input type="radio" id="r2-1-8" name="q2_1" value="8" />
+                            <input type="radio" id="r2-1-9" name="q2_1" value="9" />
+                            <input type="radio" id="r2-1-10" name="q2_1" value="10" />
+                            <label for="r2-1-0">0</label>
+                            <label for="r2-1-1">1</label>
+                            <label for="r2-1-2">2</label>
+                            <label for="r2-1-3">3</label>
+                            <label for="r2-1-4">4</label>
+                            <label for="r2-1-5">5</label>
+                            <label for="r2-1-6">6</label>
+                            <label for="r2-1-7">7</label>
+                            <label for="r2-1-8">8</label>
+                            <label for="r2-1-9">9</label>
+                            <label for="r2-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我容易過於包容那些有好的觀點卻沒有好好表達出來的人。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-2-0" name="q2_2" value="0" checked />
+                            <input type="radio" id="r2-2-1" name="q2_2" value="1" />
+                            <input type="radio" id="r2-2-2" name="q2_2" value="2" />
+                            <input type="radio" id="r2-2-3" name="q2_2" value="3" />
+                            <input type="radio" id="r2-2-4" name="q2_2" value="4" />
+                            <input type="radio" id="r2-2-5" name="q2_2" value="5" />
+                            <input type="radio" id="r2-2-6" name="q2_2" value="6" />
+                            <input type="radio" id="r2-2-7" name="q2_2" value="7" />
+                            <input type="radio" id="r2-2-8" name="q2_2" value="8" />
+                            <input type="radio" id="r2-2-9" name="q2_2" value="9" />
+                            <input type="radio" id="r2-2-10" name="q2_2" value="10" />
+                            <label for="r2-2-0">0</label>
+                            <label for="r2-2-1">1</label>
+                            <label for="r2-2-2">2</label>
+                            <label for="r2-2-3">3</label>
+                            <label for="r2-2-4">4</label>
+                            <label for="r2-2-5">5</label>
+                            <label for="r2-2-6">6</label>
+                            <label for="r2-2-7">7</label>
+                            <label for="r2-2-8">8</label>
+                            <label for="r2-2-9">9</label>
+                            <label for="r2-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 當團隊討論新觀點時，我總是會不小心說太多。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-3-0" name="q2_3" value="0" checked />
+                            <input type="radio" id="r2-3-1" name="q2_3" value="1" />
+                            <input type="radio" id="r2-3-2" name="q2_3" value="2" />
+                            <input type="radio" id="r2-3-3" name="q2_3" value="3" />
+                            <input type="radio" id="r2-3-4" name="q2_3" value="4" />
+                            <input type="radio" id="r2-3-5" name="q2_3" value="5" />
+                            <input type="radio" id="r2-3-6" name="q2_3" value="6" />
+                            <input type="radio" id="r2-3-7" name="q2_3" value="7" />
+                            <input type="radio" id="r2-3-8" name="q2_3" value="8" />
+                            <input type="radio" id="r2-3-9" name="q2_3" value="9" />
+                            <input type="radio" id="r2-3-10" name="q2_3" value="10" />
+                            <label for="r2-3-0">0</label>
+                            <label for="r2-3-1">1</label>
+                            <label for="r2-3-2">2</label>
+                            <label for="r2-3-3">3</label>
+                            <label for="r2-3-4">4</label>
+                            <label for="r2-3-5">5</label>
+                            <label for="r2-3-6">6</label>
+                            <label for="r2-3-7">7</label>
+                            <label for="r2-3-8">8</label>
+                            <label for="r2-3-9">9</label>
+                            <label for="r2-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 我總是太過客觀讓我很難融入同學中。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-4-0" name="q2_4" value="0" checked />
+                            <input type="radio" id="r2-4-1" name="q2_4" value="1" />
+                            <input type="radio" id="r2-4-2" name="q2_4" value="2" />
+                            <input type="radio" id="r2-4-3" name="q2_4" value="3" />
+                            <input type="radio" id="r2-4-4" name="q2_4" value="4" />
+                            <input type="radio" id="r2-4-5" name="q2_4" value="5" />
+                            <input type="radio" id="r2-4-6" name="q2_4" value="6" />
+                            <input type="radio" id="r2-4-7" name="q2_4" value="7" />
+                            <input type="radio" id="r2-4-8" name="q2_4" value="8" />
+                            <input type="radio" id="r2-4-9" name="q2_4" value="9" />
+                            <input type="radio" id="r2-4-10" name="q2_4" value="10" />
+                            <label for="r2-4-0">0</label>
+                            <label for="r2-4-1">1</label>
+                            <label for="r2-4-2">2</label>
+                            <label for="r2-4-3">3</label>
+                            <label for="r2-4-4">4</label>
+                            <label for="r2-4-5">5</label>
+                            <label for="r2-4-6">6</label>
+                            <label for="r2-4-7">7</label>
+                            <label for="r2-4-8">8</label>
+                            <label for="r2-4-9">9</label>
+                            <label for="r2-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 在一定要把事情辦成的情況下，我有時使人感到特別強硬以致獨斷。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-5-0" name="q2_5" value="0" checked />
+                            <input type="radio" id="r2-5-1" name="q2_5" value="1" />
+                            <input type="radio" id="r2-5-2" name="q2_5" value="2" />
+                            <input type="radio" id="r2-5-3" name="q2_5" value="3" />
+                            <input type="radio" id="r2-5-4" name="q2_5" value="4" />
+                            <input type="radio" id="r2-5-5" name="q2_5" value="5" />
+                            <input type="radio" id="r2-5-6" name="q2_5" value="6" />
+                            <input type="radio" id="r2-5-7" name="q2_5" value="7" />
+                            <input type="radio" id="r2-5-8" name="q2_5" value="8" />
+                            <input type="radio" id="r2-5-9" name="q2_5" value="9" />
+                            <input type="radio" id="r2-5-10" name="q2_5" value="10" />
+                            <label for="r2-5-0">0</label>
+                            <label for="r2-5-1">1</label>
+                            <label for="r2-5-2">2</label>
+                            <label for="r2-5-3">3</label>
+                            <label for="r2-5-4">4</label>
+                            <label for="r2-5-5">5</label>
+                            <label for="r2-5-6">6</label>
+                            <label for="r2-5-7">7</label>
+                            <label for="r2-5-8">8</label>
+                            <label for="r2-5-9">9</label>
+                            <label for="r2-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 也許是因為我過度重視團隊氣氛，我認為主導團隊很困難。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-6-0" name="q2_6" value="0" checked />
+                            <input type="radio" id="r2-6-1" name="q2_6" value="1" />
+                            <input type="radio" id="r2-6-2" name="q2_6" value="2" />
+                            <input type="radio" id="r2-6-3" name="q2_6" value="3" />
+                            <input type="radio" id="r2-6-4" name="q2_6" value="4" />
+                            <input type="radio" id="r2-6-5" name="q2_6" value="5" />
+                            <input type="radio" id="r2-6-6" name="q2_6" value="6" />
+                            <input type="radio" id="r2-6-7" name="q2_6" value="7" />
+                            <input type="radio" id="r2-6-8" name="q2_6" value="8" />
+                            <input type="radio" id="r2-6-9" name="q2_6" value="9" />
+                            <input type="radio" id="r2-6-10" name="q2_6" value="10" />
+                            <label for="r2-6-0">0</label>
+                            <label for="r2-6-1">1</label>
+                            <label for="r2-6-2">2</label>
+                            <label for="r2-6-3">3</label>
+                            <label for="r2-6-4">4</label>
+                            <label for="r2-6-5">5</label>
+                            <label for="r2-6-6">6</label>
+                            <label for="r2-6-7">7</label>
+                            <label for="r2-6-8">8</label>
+                            <label for="r2-6-9">9</label>
+                            <label for="r2-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我易於陷入腦海突然浮現的想法中，而忘了當前的事情或任務。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-7-0" name="q2_7" value="0" checked />
+                            <input type="radio" id="r2-7-1" name="q2_7" value="1" />
+                            <input type="radio" id="r2-7-2" name="q2_7" value="2" />
+                            <input type="radio" id="r2-7-3" name="q2_7" value="3" />
+                            <input type="radio" id="r2-7-4" name="q2_7" value="4" />
+                            <input type="radio" id="r2-7-5" name="q2_7" value="5" />
+                            <input type="radio" id="r2-7-6" name="q2_7" value="6" />
+                            <input type="radio" id="r2-7-7" name="q2_7" value="7" />
+                            <input type="radio" id="r2-7-8" name="q2_7" value="8" />
+                            <input type="radio" id="r2-7-9" name="q2_7" value="9" />
+                            <input type="radio" id="r2-7-10" name="q2_7" value="10" />
+                            <label for="r2-7-0">0</label>
+                            <label for="r2-7-1">1</label>
+                            <label for="r2-7-2">2</label>
+                            <label for="r2-7-3">3</label>
+                            <label for="r2-7-4">4</label>
+                            <label for="r2-7-5">5</label>
+                            <label for="r2-7-6">6</label>
+                            <label for="r2-7-7">7</label>
+                            <label for="r2-7-8">8</label>
+                            <label for="r2-7-9">9</label>
+                            <label for="r2-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 我的同學認為我總是擔心不必要的細節，或是怕把事情搞砸。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r2-8-0" name="q2_8" value="0" checked />
+                            <input type="radio" id="r2-8-1" name="q2_8" value="1" />
+                            <input type="radio" id="r2-8-2" name="q2_8" value="2" />
+                            <input type="radio" id="r2-8-3" name="q2_8" value="3" />
+                            <input type="radio" id="r2-8-4" name="q2_8" value="4" />
+                            <input type="radio" id="r2-8-5" name="q2_8" value="5" />
+                            <input type="radio" id="r2-8-6" name="q2_8" value="6" />
+                            <input type="radio" id="r2-8-7" name="q2_8" value="7" />
+                            <input type="radio" id="r2-8-8" name="q2_8" value="8" />
+                            <input type="radio" id="r2-8-9" name="q2_8" value="9" />
+                            <input type="radio" id="r2-8-10" name="q2_8" value="10" />
+                            <label for="r2-8-0">0</label>
+                            <label for="r2-8-1">1</label>
+                            <label for="r2-8-2">2</label>
+                            <label for="r2-8-3">3</label>
+                            <label for="r2-8-4">4</label>
+                            <label for="r2-8-5">5</label>
+                            <label for="r2-8-6">6</label>
+                            <label for="r2-8-7">7</label>
+                            <label for="r2-8-8">8</label>
+                            <label for="r2-8-9">9</label>
+                            <label for="r2-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">三、當我和其他人一起參與一項工作時:</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 我有能力在不施加任何壓力的情況下，去影響他人。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-1-0" name="q3_1" value="0" checked />
+                            <input type="radio" id="r3-1-1" name="q3_1" value="1" />
+                            <input type="radio" id="r3-1-2" name="q3_1" value="2" />
+                            <input type="radio" id="r3-1-3" name="q3_1" value="3" />
+                            <input type="radio" id="r3-1-4" name="q3_1" value="4" />
+                            <input type="radio" id="r3-1-5" name="q3_1" value="5" />
+                            <input type="radio" id="r3-1-6" name="q3_1" value="6" />
+                            <input type="radio" id="r3-1-7" name="q3_1" value="7" />
+                            <input type="radio" id="r3-1-8" name="q3_1" value="8" />
+                            <input type="radio" id="r3-1-9" name="q3_1" value="9" />
+                            <input type="radio" id="r3-1-10" name="q3_1" value="10" />
+                            <label for="r3-1-0">0</label>
+                            <label for="r3-1-1">1</label>
+                            <label for="r3-1-2">2</label>
+                            <label for="r3-1-3">3</label>
+                            <label for="r3-1-4">4</label>
+                            <label for="r3-1-5">5</label>
+                            <label for="r3-1-6">6</label>
+                            <label for="r3-1-7">7</label>
+                            <label for="r3-1-8">8</label>
+                            <label for="r3-1-9">9</label>
+                            <label for="r3-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我警覺性高，會隨時注意防止粗心和工作中的疏忽。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-2-0" name="q3_2" value="0" checked />
+                            <input type="radio" id="r3-2-1" name="q3_2" value="1" />
+                            <input type="radio" id="r3-2-2" name="q3_2" value="2" />
+                            <input type="radio" id="r3-2-3" name="q3_2" value="3" />
+                            <input type="radio" id="r3-2-4" name="q3_2" value="4" />
+                            <input type="radio" id="r3-2-5" name="q3_2" value="5" />
+                            <input type="radio" id="r3-2-6" name="q3_2" value="6" />
+                            <input type="radio" id="r3-2-7" name="q3_2" value="7" />
+                            <input type="radio" id="r3-2-8" name="q3_2" value="8" />
+                            <input type="radio" id="r3-2-9" name="q3_2" value="9" />
+                            <input type="radio" id="r3-2-10" name="q3_2" value="10" />
+                            <label for="r3-2-0">0</label>
+                            <label for="r3-2-1">1</label>
+                            <label for="r3-2-2">2</label>
+                            <label for="r3-2-3">3</label>
+                            <label for="r3-2-4">4</label>
+                            <label for="r3-2-5">5</label>
+                            <label for="r3-2-6">6</label>
+                            <label for="r3-2-7">7</label>
+                            <label for="r3-2-8">8</label>
+                            <label for="r3-2-9">9</label>
+                            <label for="r3-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 我願意施加壓力以換取行動，確保團隊討論不是在浪費時間或離題太遠。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-3-0" name="q3_3" value="0" checked />
+                            <input type="radio" id="r3-3-1" name="q3_3" value="1" />
+                            <input type="radio" id="r3-3-2" name="q3_3" value="2" />
+                            <input type="radio" id="r3-3-3" name="q3_3" value="3" />
+                            <input type="radio" id="r3-3-4" name="q3_3" value="4" />
+                            <input type="radio" id="r3-3-5" name="q3_3" value="5" />
+                            <input type="radio" id="r3-3-6" name="q3_3" value="6" />
+                            <input type="radio" id="r3-3-7" name="q3_3" value="7" />
+                            <input type="radio" id="r3-3-8" name="q3_3" value="8" />
+                            <input type="radio" id="r3-3-9" name="q3_3" value="9" />
+                            <input type="radio" id="r3-3-10" name="q3_3" value="10" />
+                            <label for="r3-3-0">0</label>
+                            <label for="r3-3-1">1</label>
+                            <label for="r3-3-2">2</label>
+                            <label for="r3-3-3">3</label>
+                            <label for="r3-3-4">4</label>
+                            <label for="r3-3-5">5</label>
+                            <label for="r3-3-6">6</label>
+                            <label for="r3-3-7">7</label>
+                            <label for="r3-3-8">8</label>
+                            <label for="r3-3-9">9</label>
+                            <label for="r3-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 在提出獨特觀點方面，我是數一數二的。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-4-0" name="q3_4" value="0" checked />
+                            <input type="radio" id="r3-4-1" name="q3_4" value="1" />
+                            <input type="radio" id="r3-4-2" name="q3_4" value="2" />
+                            <input type="radio" id="r3-4-3" name="q3_4" value="3" />
+                            <input type="radio" id="r3-4-4" name="q3_4" value="4" />
+                            <input type="radio" id="r3-4-5" name="q3_4" value="5" />
+                            <input type="radio" id="r3-4-6" name="q3_4" value="6" />
+                            <input type="radio" id="r3-4-7" name="q3_4" value="7" />
+                            <input type="radio" id="r3-4-8" name="q3_4" value="8" />
+                            <input type="radio" id="r3-4-9" name="q3_4" value="9" />
+                            <input type="radio" id="r3-4-10" name="q3_4" value="10" />
+                            <label for="r3-4-0">0</label>
+                            <label for="r3-4-1">1</label>
+                            <label for="r3-4-2">2</label>
+                            <label for="r3-4-3">3</label>
+                            <label for="r3-4-4">4</label>
+                            <label for="r3-4-5">5</label>
+                            <label for="r3-4-6">6</label>
+                            <label for="r3-4-7">7</label>
+                            <label for="r3-4-8">8</label>
+                            <label for="r3-4-9">9</label>
+                            <label for="r3-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 我樂於支持符合大家共同利益有關的積極建議。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-5-0" name="q3_5" value="0" checked />
+                            <input type="radio" id="r3-5-1" name="q3_5" value="1" />
+                            <input type="radio" id="r3-5-2" name="q3_5" value="2" />
+                            <input type="radio" id="r3-5-3" name="q3_5" value="3" />
+                            <input type="radio" id="r3-5-4" name="q3_5" value="4" />
+                            <input type="radio" id="r3-5-5" name="q3_5" value="5" />
+                            <input type="radio" id="r3-5-6" name="q3_5" value="6" />
+                            <input type="radio" id="r3-5-7" name="q3_5" value="7" />
+                            <input type="radio" id="r3-5-8" name="q3_5" value="8" />
+                            <input type="radio" id="r3-5-9" name="q3_5" value="9" />
+                            <input type="radio" id="r3-5-10" name="q3_5" value="10" />
+                            <label for="r3-5-0">0</label>
+                            <label for="r3-5-1">1</label>
+                            <label for="r3-5-2">2</label>
+                            <label for="r3-5-3">3</label>
+                            <label for="r3-5-4">4</label>
+                            <label for="r3-5-5">5</label>
+                            <label for="r3-5-6">6</label>
+                            <label for="r3-5-7">7</label>
+                            <label for="r3-5-8">8</label>
+                            <label for="r3-5-9">9</label>
+                            <label for="r3-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 我能很快地發現最新的觀點或預測事態發展。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-6-0" name="q3_6" value="0" checked />
+                            <input type="radio" id="r3-6-1" name="q3_6" value="1" />
+                            <input type="radio" id="r3-6-2" name="q3_6" value="2" />
+                            <input type="radio" id="r3-6-3" name="q3_6" value="3" />
+                            <input type="radio" id="r3-6-4" name="q3_6" value="4" />
+                            <input type="radio" id="r3-6-5" name="q3_6" value="5" />
+                            <input type="radio" id="r3-6-6" name="q3_6" value="6" />
+                            <input type="radio" id="r3-6-7" name="q3_6" value="7" />
+                            <input type="radio" id="r3-6-8" name="q3_6" value="8" />
+                            <input type="radio" id="r3-6-9" name="q3_6" value="9" />
+                            <input type="radio" id="r3-6-10" name="q3_6" value="10" />
+                            <label for="r3-6-0">0</label>
+                            <label for="r3-6-1">1</label>
+                            <label for="r3-6-2">2</label>
+                            <label for="r3-6-3">3</label>
+                            <label for="r3-6-4">4</label>
+                            <label for="r3-6-5">5</label>
+                            <label for="r3-6-6">6</label>
+                            <label for="r3-6-7">7</label>
+                            <label for="r3-6-8">8</label>
+                            <label for="r3-6-9">9</label>
+                            <label for="r3-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我相信我的判斷能力有助於做出正確的決策。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-7-0" name="q3_7" value="0" checked />
+                            <input type="radio" id="r3-7-1" name="q3_7" value="1" />
+                            <input type="radio" id="r3-7-2" name="q3_7" value="2" />
+                            <input type="radio" id="r3-7-3" name="q3_7" value="3" />
+                            <input type="radio" id="r3-7-4" name="q3_7" value="4" />
+                            <input type="radio" id="r3-7-5" name="q3_7" value="5" />
+                            <input type="radio" id="r3-7-6" name="q3_7" value="6" />
+                            <input type="radio" id="r3-7-7" name="q3_7" value="7" />
+                            <input type="radio" id="r3-7-8" name="q3_7" value="8" />
+                            <input type="radio" id="r3-7-9" name="q3_7" value="9" />
+                            <input type="radio" id="r3-7-10" name="q3_7" value="10" />
+                            <label for="r3-7-0">0</label>
+                            <label for="r3-7-1">1</label>
+                            <label for="r3-7-2">2</label>
+                            <label for="r3-7-3">3</label>
+                            <label for="r3-7-4">4</label>
+                            <label for="r3-7-5">5</label>
+                            <label for="r3-7-6">6</label>
+                            <label for="r3-7-7">7</label>
+                            <label for="r3-7-8">8</label>
+                            <label for="r3-7-9">9</label>
+                            <label for="r3-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 我能讓所有必要的事情或任務都被組織的有條有序。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r3-8-0" name="q3_8" value="0" checked />
+                            <input type="radio" id="r3-8-1" name="q3_8" value="1" />
+                            <input type="radio" id="r3-8-2" name="q3_8" value="2" />
+                            <input type="radio" id="r3-8-3" name="q3_8" value="3" />
+                            <input type="radio" id="r3-8-4" name="q3_8" value="4" />
+                            <input type="radio" id="r3-8-5" name="q3_8" value="5" />
+                            <input type="radio" id="r3-8-6" name="q3_8" value="6" />
+                            <input type="radio" id="r3-8-7" name="q3_8" value="7" />
+                            <input type="radio" id="r3-8-8" name="q3_8" value="8" />
+                            <input type="radio" id="r3-8-9" name="q3_8" value="9" />
+                            <input type="radio" id="r3-8-10" name="q3_8" value="10" />
+                            <label for="r3-8-0">0</label>
+                            <label for="r3-8-1">1</label>
+                            <label for="r3-8-2">2</label>
+                            <label for="r3-8-3">3</label>
+                            <label for="r3-8-4">4</label>
+                            <label for="r3-8-5">5</label>
+                            <label for="r3-8-6">6</label>
+                            <label for="r3-8-7">7</label>
+                            <label for="r3-8-8">8</label>
+                            <label for="r3-8-9">9</label>
+                            <label for="r3-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">四、我在團隊中的特質是:</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 我有興趣深入瞭解我的組員。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-1-0" name="q4_1" value="0" checked />
+                            <input type="radio" id="r4-1-1" name="q4_1" value="1" />
+                            <input type="radio" id="r4-1-2" name="q4_1" value="2" />
+                            <input type="radio" id="r4-1-3" name="q4_1" value="3" />
+                            <input type="radio" id="r4-1-4" name="q4_1" value="4" />
+                            <input type="radio" id="r4-1-5" name="q4_1" value="5" />
+                            <input type="radio" id="r4-1-6" name="q4_1" value="6" />
+                            <input type="radio" id="r4-1-7" name="q4_1" value="7" />
+                            <input type="radio" id="r4-1-8" name="q4_1" value="8" />
+                            <input type="radio" id="r4-1-9" name="q4_1" value="9" />
+                            <input type="radio" id="r4-1-10" name="q4_1" value="10" />
+                            <label for="r4-1-0">0</label>
+                            <label for="r4-1-1">1</label>
+                            <label for="r4-1-2">2</label>
+                            <label for="r4-1-3">3</label>
+                            <label for="r4-1-4">4</label>
+                            <label for="r4-1-5">5</label>
+                            <label for="r4-1-6">6</label>
+                            <label for="r4-1-7">7</label>
+                            <label for="r4-1-8">8</label>
+                            <label for="r4-1-9">9</label>
+                            <label for="r4-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我是個隨波逐流不太會挑戰別人觀點的人。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-2-0" name="q4_2" value="0" checked />
+                            <input type="radio" id="r4-2-1" name="q4_2" value="1" />
+                            <input type="radio" id="r4-2-2" name="q4_2" value="2" />
+                            <input type="radio" id="r4-2-3" name="q4_2" value="3" />
+                            <input type="radio" id="r4-2-4" name="q4_2" value="4" />
+                            <input type="radio" id="r4-2-5" name="q4_2" value="5" />
+                            <input type="radio" id="r4-2-6" name="q4_2" value="6" />
+                            <input type="radio" id="r4-2-7" name="q4_2" value="7" />
+                            <input type="radio" id="r4-2-8" name="q4_2" value="8" />
+                            <input type="radio" id="r4-2-9" name="q4_2" value="9" />
+                            <input type="radio" id="r4-2-10" name="q4_2" value="10" />
+                            <label for="r4-2-0">0</label>
+                            <label for="r4-2-1">1</label>
+                            <label for="r4-2-2">2</label>
+                            <label for="r4-2-3">3</label>
+                            <label for="r4-2-4">4</label>
+                            <label for="r4-2-5">5</label>
+                            <label for="r4-2-6">6</label>
+                            <label for="r4-2-7">7</label>
+                            <label for="r4-2-8">8</label>
+                            <label for="r4-2-9">9</label>
+                            <label for="r4-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 在團隊討論中，我通常能找到理由反駁那些不合理的觀點。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-3-0" name="q4_3" value="0" checked />
+                            <input type="radio" id="r4-3-1" name="q4_3" value="1" />
+                            <input type="radio" id="r4-3-2" name="q4_3" value="2" />
+                            <input type="radio" id="r4-3-3" name="q4_3" value="3" />
+                            <input type="radio" id="r4-3-4" name="q4_3" value="4" />
+                            <input type="radio" id="r4-3-5" name="q4_3" value="5" />
+                            <input type="radio" id="r4-3-6" name="q4_3" value="6" />
+                            <input type="radio" id="r4-3-7" name="q4_3" value="7" />
+                            <input type="radio" id="r4-3-8" name="q4_3" value="8" />
+                            <input type="radio" id="r4-3-9" name="q4_3" value="9" />
+                            <input type="radio" id="r4-3-10" name="q4_3" value="10" />
+                            <label for="r4-3-0">0</label>
+                            <label for="r4-3-1">1</label>
+                            <label for="r4-3-2">2</label>
+                            <label for="r4-3-3">3</label>
+                            <label for="r4-3-4">4</label>
+                            <label for="r4-3-5">5</label>
+                            <label for="r4-3-6">6</label>
+                            <label for="r4-3-7">7</label>
+                            <label for="r4-3-8">8</label>
+                            <label for="r4-3-9">9</label>
+                            <label for="r4-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 我認為我有能力在執行任務時，使事情順利進行。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-4-0" name="q4_4" value="0" checked />
+                            <input type="radio" id="r4-4-1" name="q4_4" value="1" />
+                            <input type="radio" id="r4-4-2" name="q4_4" value="2" />
+                            <input type="radio" id="r4-4-3" name="q4_4" value="3" />
+                            <input type="radio" id="r4-4-4" name="q4_4" value="4" />
+                            <input type="radio" id="r4-4-5" name="q4_4" value="5" />
+                            <input type="radio" id="r4-4-6" name="q4_4" value="6" />
+                            <input type="radio" id="r4-4-7" name="q4_4" value="7" />
+                            <input type="radio" id="r4-4-8" name="q4_4" value="8" />
+                            <input type="radio" id="r4-4-9" name="q4_4" value="9" />
+                            <input type="radio" id="r4-4-10" name="q4_4" value="10" />
+                            <label for="r4-4-0">0</label>
+                            <label for="r4-4-1">1</label>
+                            <label for="r4-4-2">2</label>
+                            <label for="r4-4-3">3</label>
+                            <label for="r4-4-4">4</label>
+                            <label for="r4-4-5">5</label>
+                            <label for="r4-4-6">6</label>
+                            <label for="r4-4-7">7</label>
+                            <label for="r4-4-8">8</label>
+                            <label for="r4-4-9">9</label>
+                            <label for="r4-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 我有意避免做出出乎大家意料的行為而使自己太引人注意。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-5-0" name="q4_5" value="0" checked />
+                            <input type="radio" id="r4-5-1" name="q4_5" value="1" />
+                            <input type="radio" id="r4-5-2" name="q4_5" value="2" />
+                            <input type="radio" id="r4-5-3" name="q4_5" value="3" />
+                            <input type="radio" id="r4-5-4" name="q4_5" value="4" />
+                            <input type="radio" id="r4-5-5" name="q4_5" value="5" />
+                            <input type="radio" id="r4-5-6" name="q4_5" value="6" />
+                            <input type="radio" id="r4-5-7" name="q4_5" value="7" />
+                            <input type="radio" id="r4-5-8" name="q4_5" value="8" />
+                            <input type="radio" id="r4-5-9" name="q4_5" value="9" />
+                            <input type="radio" id="r4-5-10" name="q4_5" value="10" />
+                            <label for="r4-5-0">0</label>
+                            <label for="r4-5-1">1</label>
+                            <label for="r4-5-2">2</label>
+                            <label for="r4-5-3">3</label>
+                            <label for="r4-5-4">4</label>
+                            <label for="r4-5-5">5</label>
+                            <label for="r4-5-6">6</label>
+                            <label for="r4-5-7">7</label>
+                            <label for="r4-5-8">8</label>
+                            <label for="r4-5-9">9</label>
+                            <label for="r4-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 對於交代給我的任何事情或任務，我都能做到盡善盡美。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-6-0" name="q4_6" value="0" checked />
+                            <input type="radio" id="r4-6-1" name="q4_6" value="1" />
+                            <input type="radio" id="r4-6-2" name="q4_6" value="2" />
+                            <input type="radio" id="r4-6-3" name="q4_6" value="3" />
+                            <input type="radio" id="r4-6-4" name="q4_6" value="4" />
+                            <input type="radio" id="r4-6-5" name="q4_6" value="5" />
+                            <input type="radio" id="r4-6-6" name="q4_6" value="6" />
+                            <input type="radio" id="r4-6-7" name="q4_6" value="7" />
+                            <input type="radio" id="r4-6-8" name="q4_6" value="8" />
+                            <input type="radio" id="r4-6-9" name="q4_6" value="9" />
+                            <input type="radio" id="r4-6-10" name="q4_6" value="10" />
+                            <label for="r4-6-0">0</label>
+                            <label for="r4-6-1">1</label>
+                            <label for="r4-6-2">2</label>
+                            <label for="r4-6-3">3</label>
+                            <label for="r4-6-4">4</label>
+                            <label for="r4-6-5">5</label>
+                            <label for="r4-6-6">6</label>
+                            <label for="r4-6-7">7</label>
+                            <label for="r4-6-8">8</label>
+                            <label for="r4-6-9">9</label>
+                            <label for="r4-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我樂於與團隊以外的人交流。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-7-0" name="q4_7" value="0" checked />
+                            <input type="radio" id="r4-7-1" name="q4_7" value="1" />
+                            <input type="radio" id="r4-7-2" name="q4_7" value="2" />
+                            <input type="radio" id="r4-7-3" name="q4_7" value="3" />
+                            <input type="radio" id="r4-7-4" name="q4_7" value="4" />
+                            <input type="radio" id="r4-7-5" name="q4_7" value="5" />
+                            <input type="radio" id="r4-7-6" name="q4_7" value="6" />
+                            <input type="radio" id="r4-7-7" name="q4_7" value="7" />
+                            <input type="radio" id="r4-7-8" name="q4_7" value="8" />
+                            <input type="radio" id="r4-7-9" name="q4_7" value="9" />
+                            <input type="radio" id="r4-7-10" name="q4_7" value="10" />
+                            <label for="r4-7-0">0</label>
+                            <label for="r4-7-1">1</label>
+                            <label for="r4-7-2">2</label>
+                            <label for="r4-7-3">3</label>
+                            <label for="r4-7-4">4</label>
+                            <label for="r4-7-5">5</label>
+                            <label for="r4-7-6">6</label>
+                            <label for="r4-7-7">7</label>
+                            <label for="r4-7-8">8</label>
+                            <label for="r4-7-9">9</label>
+                            <label for="r4-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 雖然我對所有的觀點都感興趣，但該做選擇時，我會毫不猶豫地做決定。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r4-8-0" name="q4_8" value="0" checked />
+                            <input type="radio" id="r4-8-1" name="q4_8" value="1" />
+                            <input type="radio" id="r4-8-2" name="q4_8" value="2" />
+                            <input type="radio" id="r4-8-3" name="q4_8" value="3" />
+                            <input type="radio" id="r4-8-4" name="q4_8" value="4" />
+                            <input type="radio" id="r4-8-5" name="q4_8" value="5" />
+                            <input type="radio" id="r4-8-6" name="q4_8" value="6" />
+                            <input type="radio" id="r4-8-7" name="q4_8" value="7" />
+                            <input type="radio" id="r4-8-8" name="q4_8" value="8" />
+                            <input type="radio" id="r4-8-9" name="q4_8" value="9" />
+                            <input type="radio" id="r4-8-10" name="q4_8" value="10" />
+                            <label for="r4-8-0">0</label>
+                            <label for="r4-8-1">1</label>
+                            <label for="r4-8-2">2</label>
+                            <label for="r4-8-3">3</label>
+                            <label for="r4-8-4">4</label>
+                            <label for="r4-8-5">5</label>
+                            <label for="r4-8-6">6</label>
+                            <label for="r4-8-7">7</label>
+                            <label for="r4-8-8">8</label>
+                            <label for="r4-8-9">9</label>
+                            <label for="r4-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">五、我能在團隊合作過程中獲得滿足和成就感是因為:</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 我喜歡分析情況並衡量任何可能的選擇。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-1-0" name="q5_1" value="0" checked />
+                            <input type="radio" id="r5-1-1" name="q5_1" value="1" />
+                            <input type="radio" id="r5-1-2" name="q5_1" value="2" />
+                            <input type="radio" id="r5-1-3" name="q5_1" value="3" />
+                            <input type="radio" id="r5-1-4" name="q5_1" value="4" />
+                            <input type="radio" id="r5-1-5" name="q5_1" value="5" />
+                            <input type="radio" id="r5-1-6" name="q5_1" value="6" />
+                            <input type="radio" id="r5-1-7" name="q5_1" value="7" />
+                            <input type="radio" id="r5-1-8" name="q5_1" value="8" />
+                            <input type="radio" id="r5-1-9" name="q5_1" value="9" />
+                            <input type="radio" id="r5-1-10" name="q5_1" value="10" />
+                            <label for="r5-1-0">0</label>
+                            <label for="r5-1-1">1</label>
+                            <label for="r5-1-2">2</label>
+                            <label for="r5-1-3">3</label>
+                            <label for="r5-1-4">4</label>
+                            <label for="r5-1-5">5</label>
+                            <label for="r5-1-6">6</label>
+                            <label for="r5-1-7">7</label>
+                            <label for="r5-1-8">8</label>
+                            <label for="r5-1-9">9</label>
+                            <label for="r5-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我對尋找實際可執行的解決方案感興趣。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-2-0" name="q5_2" value="0" checked />
+                            <input type="radio" id="r5-2-1" name="q5_2" value="1" />
+                            <input type="radio" id="r5-2-2" name="q5_2" value="2" />
+                            <input type="radio" id="r5-2-3" name="q5_2" value="3" />
+                            <input type="radio" id="r5-2-4" name="q5_2" value="4" />
+                            <input type="radio" id="r5-2-5" name="q5_2" value="5" />
+                            <input type="radio" id="r5-2-6" name="q5_2" value="6" />
+                            <input type="radio" id="r5-2-7" name="q5_2" value="7" />
+                            <input type="radio" id="r5-2-8" name="q5_2" value="8" />
+                            <input type="radio" id="r5-2-9" name="q5_2" value="9" />
+                            <input type="radio" id="r5-2-10" name="q5_2" value="10" />
+                            <label for="r5-2-0">0</label>
+                            <label for="r5-2-1">1</label>
+                            <label for="r5-2-2">2</label>
+                            <label for="r5-2-3">3</label>
+                            <label for="r5-2-4">4</label>
+                            <label for="r5-2-5">5</label>
+                            <label for="r5-2-6">6</label>
+                            <label for="r5-2-7">7</label>
+                            <label for="r5-2-8">8</label>
+                            <label for="r5-2-9">9</label>
+                            <label for="r5-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 我喜歡我在促進良好團隊互動時的感覺。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-3-0" name="q5_3" value="0" checked />
+                            <input type="radio" id="r5-3-1" name="q5_3" value="1" />
+                            <input type="radio" id="r5-3-2" name="q5_3" value="2" />
+                            <input type="radio" id="r5-3-3" name="q5_3" value="3" />
+                            <input type="radio" id="r5-3-4" name="q5_3" value="4" />
+                            <input type="radio" id="r5-3-5" name="q5_3" value="5" />
+                            <input type="radio" id="r5-3-6" name="q5_3" value="6" />
+                            <input type="radio" id="r5-3-7" name="q5_3" value="7" />
+                            <input type="radio" id="r5-3-8" name="q5_3" value="8" />
+                            <input type="radio" id="r5-3-9" name="q5_3" value="9" />
+                            <input type="radio" id="r5-3-10" name="q5_3" value="10" />
+                            <label for="r5-3-0">0</label>
+                            <label for="r5-3-1">1</label>
+                            <label for="r5-3-2">2</label>
+                            <label for="r5-3-3">3</label>
+                            <label for="r5-3-4">4</label>
+                            <label for="r5-3-5">5</label>
+                            <label for="r5-3-6">6</label>
+                            <label for="r5-3-7">7</label>
+                            <label for="r5-3-8">8</label>
+                            <label for="r5-3-9">9</label>
+                            <label for="r5-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 我能對決策有強烈的影響力。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-4-0" name="q5_4" value="0" checked />
+                            <input type="radio" id="r5-4-1" name="q5_4" value="1" />
+                            <input type="radio" id="r5-4-2" name="q5_4" value="2" />
+                            <input type="radio" id="r5-4-3" name="q5_4" value="3" />
+                            <input type="radio" id="r5-4-4" name="q5_4" value="4" />
+                            <input type="radio" id="r5-4-5" name="q5_4" value="5" />
+                            <input type="radio" id="r5-4-6" name="q5_4" value="6" />
+                            <input type="radio" id="r5-4-7" name="q5_4" value="7" />
+                            <input type="radio" id="r5-4-8" name="q5_4" value="8" />
+                            <input type="radio" id="r5-4-9" name="q5_4" value="9" />
+                            <input type="radio" id="r5-4-10" name="q5_4" value="10" />
+                            <label for="r5-4-0">0</label>
+                            <label for="r5-4-1">1</label>
+                            <label for="r5-4-2">2</label>
+                            <label for="r5-4-3">3</label>
+                            <label for="r5-4-4">4</label>
+                            <label for="r5-4-5">5</label>
+                            <label for="r5-4-6">6</label>
+                            <label for="r5-4-7">7</label>
+                            <label for="r5-4-8">8</label>
+                            <label for="r5-4-9">9</label>
+                            <label for="r5-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 我有機會結識有不同創新觀點的新朋友。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-5-0" name="q5_5" value="0" checked />
+                            <input type="radio" id="r5-5-1" name="q5_5" value="1" />
+                            <input type="radio" id="r5-5-2" name="q5_5" value="2" />
+                            <input type="radio" id="r5-5-3" name="q5_5" value="3" />
+                            <input type="radio" id="r5-5-4" name="q5_5" value="4" />
+                            <input type="radio" id="r5-5-5" name="q5_5" value="5" />
+                            <input type="radio" id="r5-5-6" name="q5_5" value="6" />
+                            <input type="radio" id="r5-5-7" name="q5_5" value="7" />
+                            <input type="radio" id="r5-5-8" name="q5_5" value="8" />
+                            <input type="radio" id="r5-5-9" name="q5_5" value="9" />
+                            <input type="radio" id="r5-5-10" name="q5_5" value="10" />
+                            <label for="r5-5-0">0</label>
+                            <label for="r5-5-1">1</label>
+                            <label for="r5-5-2">2</label>
+                            <label for="r5-5-3">3</label>
+                            <label for="r5-5-4">4</label>
+                            <label for="r5-5-5">5</label>
+                            <label for="r5-5-6">6</label>
+                            <label for="r5-5-7">7</label>
+                            <label for="r5-5-8">8</label>
+                            <label for="r5-5-9">9</label>
+                            <label for="r5-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 我能使人們在某項必要的事情上達成一致意見。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-6-0" name="q5_6" value="0" checked />
+                            <input type="radio" id="r5-6-1" name="q5_6" value="1" />
+                            <input type="radio" id="r5-6-2" name="q5_6" value="2" />
+                            <input type="radio" id="r5-6-3" name="q5_6" value="3" />
+                            <input type="radio" id="r5-6-4" name="q5_6" value="4" />
+                            <input type="radio" id="r5-6-5" name="q5_6" value="5" />
+                            <input type="radio" id="r5-6-6" name="q5_6" value="6" />
+                            <input type="radio" id="r5-6-7" name="q5_6" value="7" />
+                            <input type="radio" id="r5-6-8" name="q5_6" value="8" />
+                            <input type="radio" id="r5-6-9" name="q5_6" value="9" />
+                            <input type="radio" id="r5-6-10" name="q5_6" value="10" />
+                            <label for="r5-6-0">0</label>
+                            <label for="r5-6-1">1</label>
+                            <label for="r5-6-2">2</label>
+                            <label for="r5-6-3">3</label>
+                            <label for="r5-6-4">4</label>
+                            <label for="r5-6-5">5</label>
+                            <label for="r5-6-6">6</label>
+                            <label for="r5-6-7">7</label>
+                            <label for="r5-6-8">8</label>
+                            <label for="r5-6-9">9</label>
+                            <label for="r5-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我認為我具備全神貫注投入到團隊討論中並完成任務的特質。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-7-0" name="q5_7" value="0" checked />
+                            <input type="radio" id="r5-7-1" name="q5_7" value="1" />
+                            <input type="radio" id="r5-7-2" name="q5_7" value="2" />
+                            <input type="radio" id="r5-7-3" name="q5_7" value="3" />
+                            <input type="radio" id="r5-7-4" name="q5_7" value="4" />
+                            <input type="radio" id="r5-7-5" name="q5_7" value="5" />
+                            <input type="radio" id="r5-7-6" name="q5_7" value="6" />
+                            <input type="radio" id="r5-7-7" name="q5_7" value="7" />
+                            <input type="radio" id="r5-7-8" name="q5_7" value="8" />
+                            <input type="radio" id="r5-7-9" name="q5_7" value="9" />
+                            <input type="radio" id="r5-7-10" name="q5_7" value="10" />
+                            <label for="r5-7-0">0</label>
+                            <label for="r5-7-1">1</label>
+                            <label for="r5-7-2">2</label>
+                            <label for="r5-7-3">3</label>
+                            <label for="r5-7-4">4</label>
+                            <label for="r5-7-5">5</label>
+                            <label for="r5-7-6">6</label>
+                            <label for="r5-7-7">7</label>
+                            <label for="r5-7-8">8</label>
+                            <label for="r5-7-9">9</label>
+                            <label for="r5-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 我能在團隊裡找到一領域好好發揮我的想像力。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r5-8-0" name="q5_8" value="0" checked />
+                            <input type="radio" id="r5-8-1" name="q5_8" value="1" />
+                            <input type="radio" id="r5-8-2" name="q5_8" value="2" />
+                            <input type="radio" id="r5-8-3" name="q5_8" value="3" />
+                            <input type="radio" id="r5-8-4" name="q5_8" value="4" />
+                            <input type="radio" id="r5-8-5" name="q5_8" value="5" />
+                            <input type="radio" id="r5-8-6" name="q5_8" value="6" />
+                            <input type="radio" id="r5-8-7" name="q5_8" value="7" />
+                            <input type="radio" id="r5-8-8" name="q5_8" value="8" />
+                            <input type="radio" id="r5-8-9" name="q5_8" value="9" />
+                            <input type="radio" id="r5-8-10" name="q5_8" value="10" />
+                            <label for="r5-8-0">0</label>
+                            <label for="r5-8-1">1</label>
+                            <label for="r5-8-2">2</label>
+                            <label for="r5-8-3">3</label>
+                            <label for="r5-8-4">4</label>
+                            <label for="r5-8-5">5</label>
+                            <label for="r5-8-6">6</label>
+                            <label for="r5-8-7">7</label>
+                            <label for="r5-8-8">8</label>
+                            <label for="r5-8-9">9</label>
+                            <label for="r5-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">六、如果我在時間緊迫，團隊成員間不熟的情況下突然接到一件困難的任務時:</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 在有新方案之前，我寧願暫時獨自脫離團隊，以擬定一個解決困境的方案。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-1-0" name="q6_1" value="0" checked />
+                            <input type="radio" id="r6-1-1" name="q6_1" value="1" />
+                            <input type="radio" id="r6-1-2" name="q6_1" value="2" />
+                            <input type="radio" id="r6-1-3" name="q6_1" value="3" />
+                            <input type="radio" id="r6-1-4" name="q6_1" value="4" />
+                            <input type="radio" id="r6-1-5" name="q6_1" value="5" />
+                            <input type="radio" id="r6-1-6" name="q6_1" value="6" />
+                            <input type="radio" id="r6-1-7" name="q6_1" value="7" />
+                            <input type="radio" id="r6-1-8" name="q6_1" value="8" />
+                            <input type="radio" id="r6-1-9" name="q6_1" value="9" />
+                            <input type="radio" id="r6-1-10" name="q6_1" value="10" />
+                            <label for="r6-1-0">0</label>
+                            <label for="r6-1-1">1</label>
+                            <label for="r6-1-2">2</label>
+                            <label for="r6-1-3">3</label>
+                            <label for="r6-1-4">4</label>
+                            <label for="r6-1-5">5</label>
+                            <label for="r6-1-6">6</label>
+                            <label for="r6-1-7">7</label>
+                            <label for="r6-1-8">8</label>
+                            <label for="r6-1-9">9</label>
+                            <label for="r6-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 我比較願意與那些表現出積極態度的人一起工作。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-2-0" name="q6_2" value="0" checked />
+                            <input type="radio" id="r6-2-1" name="q6_2" value="1" />
+                            <input type="radio" id="r6-2-2" name="q6_2" value="2" />
+                            <input type="radio" id="r6-2-3" name="q6_2" value="3" />
+                            <input type="radio" id="r6-2-4" name="q6_2" value="4" />
+                            <input type="radio" id="r6-2-5" name="q6_2" value="5" />
+                            <input type="radio" id="r6-2-6" name="q6_2" value="6" />
+                            <input type="radio" id="r6-2-7" name="q6_2" value="7" />
+                            <input type="radio" id="r6-2-8" name="q6_2" value="8" />
+                            <input type="radio" id="r6-2-9" name="q6_2" value="9" />
+                            <input type="radio" id="r6-2-10" name="q6_2" value="10" />
+                            <label for="r6-2-0">0</label>
+                            <label for="r6-2-1">1</label>
+                            <label for="r6-2-2">2</label>
+                            <label for="r6-2-3">3</label>
+                            <label for="r6-2-4">4</label>
+                            <label for="r6-2-5">5</label>
+                            <label for="r6-2-6">6</label>
+                            <label for="r6-2-7">7</label>
+                            <label for="r6-2-8">8</label>
+                            <label for="r6-2-9">9</label>
+                            <label for="r6-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 我會根據個人所長來分配任務以此減輕工作負擔。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-3-0" name="q6_3" value="0" checked />
+                            <input type="radio" id="r6-3-1" name="q6_3" value="1" />
+                            <input type="radio" id="r6-3-2" name="q6_3" value="2" />
+                            <input type="radio" id="r6-3-3" name="q6_3" value="3" />
+                            <input type="radio" id="r6-3-4" name="q6_3" value="4" />
+                            <input type="radio" id="r6-3-5" name="q6_3" value="5" />
+                            <input type="radio" id="r6-3-6" name="q6_3" value="6" />
+                            <input type="radio" id="r6-3-7" name="q6_3" value="7" />
+                            <input type="radio" id="r6-3-8" name="q6_3" value="8" />
+                            <input type="radio" id="r6-3-9" name="q6_3" value="9" />
+                            <input type="radio" id="r6-3-10" name="q6_3" value="10" />
+                            <label for="r6-3-0">0</label>
+                            <label for="r6-3-1">1</label>
+                            <label for="r6-3-2">2</label>
+                            <label for="r6-3-3">3</label>
+                            <label for="r6-3-4">4</label>
+                            <label for="r6-3-5">5</label>
+                            <label for="r6-3-6">6</label>
+                            <label for="r6-3-7">7</label>
+                            <label for="r6-3-8">8</label>
+                            <label for="r6-3-9">9</label>
+                            <label for="r6-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 我天生的緊迫感，有助於讓我們不會落後進度。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-4-0" name="q6_4" value="0" checked />
+                            <input type="radio" id="r6-4-1" name="q6_4" value="1" />
+                            <input type="radio" id="r6-4-2" name="q6_4" value="2" />
+                            <input type="radio" id="r6-4-3" name="q6_4" value="3" />
+                            <input type="radio" id="r6-4-4" name="q6_4" value="4" />
+                            <input type="radio" id="r6-4-5" name="q6_4" value="5" />
+                            <input type="radio" id="r6-4-6" name="q6_4" value="6" />
+                            <input type="radio" id="r6-4-7" name="q6_4" value="7" />
+                            <input type="radio" id="r6-4-8" name="q6_4" value="8" />
+                            <input type="radio" id="r6-4-9" name="q6_4" value="9" />
+                            <input type="radio" id="r6-4-10" name="q6_4" value="10" />
+                            <label for="r6-4-0">0</label>
+                            <label for="r6-4-1">1</label>
+                            <label for="r6-4-2">2</label>
+                            <label for="r6-4-3">3</label>
+                            <label for="r6-4-4">4</label>
+                            <label for="r6-4-5">5</label>
+                            <label for="r6-4-6">6</label>
+                            <label for="r6-4-7">7</label>
+                            <label for="r6-4-8">8</label>
+                            <label for="r6-4-9">9</label>
+                            <label for="r6-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 我認為我能保持頭腦冷靜，有條理地思考問題。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-5-0" name="q6_5" value="0" checked />
+                            <input type="radio" id="r6-5-1" name="q6_5" value="1" />
+                            <input type="radio" id="r6-5-2" name="q6_5" value="2" />
+                            <input type="radio" id="r6-5-3" name="q6_5" value="3" />
+                            <input type="radio" id="r6-5-4" name="q6_5" value="4" />
+                            <input type="radio" id="r6-5-5" name="q6_5" value="5" />
+                            <input type="radio" id="r6-5-6" name="q6_5" value="6" />
+                            <input type="radio" id="r6-5-7" name="q6_5" value="7" />
+                            <input type="radio" id="r6-5-8" name="q6_5" value="8" />
+                            <input type="radio" id="r6-5-9" name="q6_5" value="9" />
+                            <input type="radio" id="r6-5-10" name="q6_5" value="10" />
+                            <label for="r6-5-0">0</label>
+                            <label for="r6-5-1">1</label>
+                            <label for="r6-5-2">2</label>
+                            <label for="r6-5-3">3</label>
+                            <label for="r6-5-4">4</label>
+                            <label for="r6-5-5">5</label>
+                            <label for="r6-5-6">6</label>
+                            <label for="r6-5-7">7</label>
+                            <label for="r6-5-8">8</label>
+                            <label for="r6-5-9">9</label>
+                            <label for="r6-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 儘管困難有壓力，我仍會保持堅定的目標。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-6-0" name="q6_6" value="0" checked />
+                            <input type="radio" id="r6-6-1" name="q6_6" value="1" />
+                            <input type="radio" id="r6-6-2" name="q6_6" value="2" />
+                            <input type="radio" id="r6-6-3" name="q6_6" value="3" />
+                            <input type="radio" id="r6-6-4" name="q6_6" value="4" />
+                            <input type="radio" id="r6-6-5" name="q6_6" value="5" />
+                            <input type="radio" id="r6-6-6" name="q6_6" value="6" />
+                            <input type="radio" id="r6-6-7" name="q6_6" value="7" />
+                            <input type="radio" id="r6-6-8" name="q6_6" value="8" />
+                            <input type="radio" id="r6-6-9" name="q6_6" value="9" />
+                            <input type="radio" id="r6-6-10" name="q6_6" value="10" />
+                            <label for="r6-6-0">0</label>
+                            <label for="r6-6-1">1</label>
+                            <label for="r6-6-2">2</label>
+                            <label for="r6-6-3">3</label>
+                            <label for="r6-6-4">4</label>
+                            <label for="r6-6-5">5</label>
+                            <label for="r6-6-6">6</label>
+                            <label for="r6-6-7">7</label>
+                            <label for="r6-6-8">8</label>
+                            <label for="r6-6-9">9</label>
+                            <label for="r6-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 如果團隊合作沒有任何進展，我會採取積極措施去加以推動。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-7-0" name="q6_7" value="0" checked />
+                            <input type="radio" id="r6-7-1" name="q6_7" value="1" />
+                            <input type="radio" id="r6-7-2" name="q6_7" value="2" />
+                            <input type="radio" id="r6-7-3" name="q6_7" value="3" />
+                            <input type="radio" id="r6-7-4" name="q6_7" value="4" />
+                            <input type="radio" id="r6-7-5" name="q6_7" value="5" />
+                            <input type="radio" id="r6-7-6" name="q6_7" value="6" />
+                            <input type="radio" id="r6-7-7" name="q6_7" value="7" />
+                            <input type="radio" id="r6-7-8" name="q6_7" value="8" />
+                            <input type="radio" id="r6-7-9" name="q6_7" value="9" />
+                            <input type="radio" id="r6-7-10" name="q6_7" value="10" />
+                            <label for="r6-7-0">0</label>
+                            <label for="r6-7-1">1</label>
+                            <label for="r6-7-2">2</label>
+                            <label for="r6-7-3">3</label>
+                            <label for="r6-7-4">4</label>
+                            <label for="r6-7-5">5</label>
+                            <label for="r6-7-6">6</label>
+                            <label for="r6-7-7">7</label>
+                            <label for="r6-7-8">8</label>
+                            <label for="r6-7-9">9</label>
+                            <label for="r6-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 我會主動展開討論，以激發新的想法，並推動事情的發展。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r6-8-0" name="q6_8" value="0" checked />
+                            <input type="radio" id="r6-8-1" name="q6_8" value="1" />
+                            <input type="radio" id="r6-8-2" name="q6_8" value="2" />
+                            <input type="radio" id="r6-8-3" name="q6_8" value="3" />
+                            <input type="radio" id="r6-8-4" name="q6_8" value="4" />
+                            <input type="radio" id="r6-8-5" name="q6_8" value="5" />
+                            <input type="radio" id="r6-8-6" name="q6_8" value="6" />
+                            <input type="radio" id="r6-8-7" name="q6_8" value="7" />
+                            <input type="radio" id="r6-8-8" name="q6_8" value="8" />
+                            <input type="radio" id="r6-8-9" name="q6_8" value="9" />
+                            <input type="radio" id="r6-8-10" name="q6_8" value="10" />
+                            <label for="r6-8-0">0</label>
+                            <label for="r6-8-1">1</label>
+                            <label for="r6-8-2">2</label>
+                            <label for="r6-8-3">3</label>
+                            <label for="r6-8-4">4</label>
+                            <label for="r6-8-5">5</label>
+                            <label for="r6-8-6">6</label>
+                            <label for="r6-8-7">7</label>
+                            <label for="r6-8-8">8</label>
+                            <label for="r6-8-9">9</label>
+                            <label for="r6-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="section">
+                <div class="title-wrapper">
+                    <p class="title">七、我在團隊合作過程中遇到問題時:</p>
+                    <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
+                </div>
+                <div class="content-wrapper">
+                    <div class="question-wrapper">
+                        <p class="question">A. 我很容易對那些阻礙事情發展的人表現出不耐煩。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-1-0" name="q7_1" value="0" checked />
+                            <input type="radio" id="r7-1-1" name="q7_1" value="1" />
+                            <input type="radio" id="r7-1-2" name="q7_1" value="2" />
+                            <input type="radio" id="r7-1-3" name="q7_1" value="3" />
+                            <input type="radio" id="r7-1-4" name="q7_1" value="4" />
+                            <input type="radio" id="r7-1-5" name="q7_1" value="5" />
+                            <input type="radio" id="r7-1-6" name="q7_1" value="6" />
+                            <input type="radio" id="r7-1-7" name="q7_1" value="7" />
+                            <input type="radio" id="r7-1-8" name="q7_1" value="8" />
+                            <input type="radio" id="r7-1-9" name="q7_1" value="9" />
+                            <input type="radio" id="r7-1-10" name="q7_1" value="10" />
+                            <label for="r7-1-0">0</label>
+                            <label for="r7-1-1">1</label>
+                            <label for="r7-1-2">2</label>
+                            <label for="r7-1-3">3</label>
+                            <label for="r7-1-4">4</label>
+                            <label for="r7-1-5">5</label>
+                            <label for="r7-1-6">6</label>
+                            <label for="r7-1-7">7</label>
+                            <label for="r7-1-8">8</label>
+                            <label for="r7-1-9">9</label>
+                            <label for="r7-1-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">B. 他人可能會認為我太注重分析，而缺少憑直覺判斷的觀點。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-2-0" name="q7_2" value="0" checked />
+                            <input type="radio" id="r7-2-1" name="q7_2" value="1" />
+                            <input type="radio" id="r7-2-2" name="q7_2" value="2" />
+                            <input type="radio" id="r7-2-3" name="q7_2" value="3" />
+                            <input type="radio" id="r7-2-4" name="q7_2" value="4" />
+                            <input type="radio" id="r7-2-5" name="q7_2" value="5" />
+                            <input type="radio" id="r7-2-6" name="q7_2" value="6" />
+                            <input type="radio" id="r7-2-7" name="q7_2" value="7" />
+                            <input type="radio" id="r7-2-8" name="q7_2" value="8" />
+                            <input type="radio" id="r7-2-9" name="q7_2" value="9" />
+                            <input type="radio" id="r7-2-10" name="q7_2" value="10" />
+                            <label for="r7-2-0">0</label>
+                            <label for="r7-2-1">1</label>
+                            <label for="r7-2-2">2</label>
+                            <label for="r7-2-3">3</label>
+                            <label for="r7-2-4">4</label>
+                            <label for="r7-2-5">5</label>
+                            <label for="r7-2-6">6</label>
+                            <label for="r7-2-7">7</label>
+                            <label for="r7-2-8">8</label>
+                            <label for="r7-2-9">9</label>
+                            <label for="r7-2-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">C. 我追求事情能確實完成的理念，可能會拖延團隊合作過程中事情的發展。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-3-0" name="q7_3" value="0" checked />
+                            <input type="radio" id="r7-3-1" name="q7_3" value="1" />
+                            <input type="radio" id="r7-3-2" name="q7_3" value="2" />
+                            <input type="radio" id="r7-3-3" name="q7_3" value="3" />
+                            <input type="radio" id="r7-3-4" name="q7_3" value="4" />
+                            <input type="radio" id="r7-3-5" name="q7_3" value="5" />
+                            <input type="radio" id="r7-3-6" name="q7_3" value="6" />
+                            <input type="radio" id="r7-3-7" name="q7_3" value="7" />
+                            <input type="radio" id="r7-3-8" name="q7_3" value="8" />
+                            <input type="radio" id="r7-3-9" name="q7_3" value="9" />
+                            <input type="radio" id="r7-3-10" name="q7_3" value="10" />
+                            <label for="r7-3-0">0</label>
+                            <label for="r7-3-1">1</label>
+                            <label for="r7-3-2">2</label>
+                            <label for="r7-3-3">3</label>
+                            <label for="r7-3-4">4</label>
+                            <label for="r7-3-5">5</label>
+                            <label for="r7-3-6">6</label>
+                            <label for="r7-3-7">7</label>
+                            <label for="r7-3-8">8</label>
+                            <label for="r7-3-9">9</label>
+                            <label for="r7-3-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">D. 我常常容易產生厭煩感，需要一、二個有熱情的人使我振作起來。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-4-0" name="q7_4" value="0" checked />
+                            <input type="radio" id="r7-4-1" name="q7_4" value="1" />
+                            <input type="radio" id="r7-4-2" name="q7_4" value="2" />
+                            <input type="radio" id="r7-4-3" name="q7_4" value="3" />
+                            <input type="radio" id="r7-4-4" name="q7_4" value="4" />
+                            <input type="radio" id="r7-4-5" name="q7_4" value="5" />
+                            <input type="radio" id="r7-4-6" name="q7_4" value="6" />
+                            <input type="radio" id="r7-4-7" name="q7_4" value="7" />
+                            <input type="radio" id="r7-4-8" name="q7_4" value="8" />
+                            <input type="radio" id="r7-4-9" name="q7_4" value="9" />
+                            <input type="radio" id="r7-4-10" name="q7_4" value="10" />
+                            <label for="r7-4-0">0</label>
+                            <label for="r7-4-1">1</label>
+                            <label for="r7-4-2">2</label>
+                            <label for="r7-4-3">3</label>
+                            <label for="r7-4-4">4</label>
+                            <label for="r7-4-5">5</label>
+                            <label for="r7-4-6">6</label>
+                            <label for="r7-4-7">7</label>
+                            <label for="r7-4-8">8</label>
+                            <label for="r7-4-9">9</label>
+                            <label for="r7-4-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">E. 除非一開始目標明確，否則我很難開始。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-5-0" name="q7_5" value="0" checked />
+                            <input type="radio" id="r7-5-1" name="q7_5" value="1" />
+                            <input type="radio" id="r7-5-2" name="q7_5" value="2" />
+                            <input type="radio" id="r7-5-3" name="q7_5" value="3" />
+                            <input type="radio" id="r7-5-4" name="q7_5" value="4" />
+                            <input type="radio" id="r7-5-5" name="q7_5" value="5" />
+                            <input type="radio" id="r7-5-6" name="q7_5" value="6" />
+                            <input type="radio" id="r7-5-7" name="q7_5" value="7" />
+                            <input type="radio" id="r7-5-8" name="q7_5" value="8" />
+                            <input type="radio" id="r7-5-9" name="q7_5" value="9" />
+                            <input type="radio" id="r7-5-10" name="q7_5" value="10" />
+                            <label for="r7-5-0">0</label>
+                            <label for="r7-5-1">1</label>
+                            <label for="r7-5-2">2</label>
+                            <label for="r7-5-3">3</label>
+                            <label for="r7-5-4">4</label>
+                            <label for="r7-5-5">5</label>
+                            <label for="r7-5-6">6</label>
+                            <label for="r7-5-7">7</label>
+                            <label for="r7-5-8">8</label>
+                            <label for="r7-5-9">9</label>
+                            <label for="r7-5-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">F. 我有時不善於表達我想到或遇到的複雜問題。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-6-0" name="q7_6" value="0" checked />
+                            <input type="radio" id="r7-6-1" name="q7_6" value="1" />
+                            <input type="radio" id="r7-6-2" name="q7_6" value="2" />
+                            <input type="radio" id="r7-6-3" name="q7_6" value="3" />
+                            <input type="radio" id="r7-6-4" name="q7_6" value="4" />
+                            <input type="radio" id="r7-6-5" name="q7_6" value="5" />
+                            <input type="radio" id="r7-6-6" name="q7_6" value="6" />
+                            <input type="radio" id="r7-6-7" name="q7_6" value="7" />
+                            <input type="radio" id="r7-6-8" name="q7_6" value="8" />
+                            <input type="radio" id="r7-6-9" name="q7_6" value="9" />
+                            <input type="radio" id="r7-6-10" name="q7_6" value="10" />
+                            <label for="r7-6-0">0</label>
+                            <label for="r7-6-1">1</label>
+                            <label for="r7-6-2">2</label>
+                            <label for="r7-6-3">3</label>
+                            <label for="r7-6-4">4</label>
+                            <label for="r7-6-5">5</label>
+                            <label for="r7-6-6">6</label>
+                            <label for="r7-6-7">7</label>
+                            <label for="r7-6-8">8</label>
+                            <label for="r7-6-9">9</label>
+                            <label for="r7-6-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">G. 我自己辦不到的事情，我會主動求助他人。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-7-0" name="q7_7" value="0" checked />
+                            <input type="radio" id="r7-7-1" name="q7_7" value="1" />
+                            <input type="radio" id="r7-7-2" name="q7_7" value="2" />
+                            <input type="radio" id="r7-7-3" name="q7_7" value="3" />
+                            <input type="radio" id="r7-7-4" name="q7_7" value="4" />
+                            <input type="radio" id="r7-7-5" name="q7_7" value="5" />
+                            <input type="radio" id="r7-7-6" name="q7_7" value="6" />
+                            <input type="radio" id="r7-7-7" name="q7_7" value="7" />
+                            <input type="radio" id="r7-7-8" name="q7_7" value="8" />
+                            <input type="radio" id="r7-7-9" name="q7_7" value="9" />
+                            <input type="radio" id="r7-7-10" name="q7_7" value="10" />
+                            <label for="r7-7-0">0</label>
+                            <label for="r7-7-1">1</label>
+                            <label for="r7-7-2">2</label>
+                            <label for="r7-7-3">3</label>
+                            <label for="r7-7-4">4</label>
+                            <label for="r7-7-5">5</label>
+                            <label for="r7-7-6">6</label>
+                            <label for="r7-7-7">7</label>
+                            <label for="r7-7-8">8</label>
+                            <label for="r7-7-9">9</label>
+                            <label for="r7-7-10">10</label>
+                        </div>
+                    </div>
+                    <div class="question-wrapper">
+                        <p class="question">H. 當我遇到持強烈反對意見的人時，我會猶豫是否要表達我的觀點。</p>
+                        <div class="option-grid-wrapper">
+                            <input type="radio" id="r7-8-0" name="q7_8" value="0" checked />
+                            <input type="radio" id="r7-8-1" name="q7_8" value="1" />
+                            <input type="radio" id="r7-8-2" name="q7_8" value="2" />
+                            <input type="radio" id="r7-8-3" name="q7_8" value="3" />
+                            <input type="radio" id="r7-8-4" name="q7_8" value="4" />
+                            <input type="radio" id="r7-8-5" name="q7_8" value="5" />
+                            <input type="radio" id="r7-8-6" name="q7_8" value="6" />
+                            <input type="radio" id="r7-8-7" name="q7_8" value="7" />
+                            <input type="radio" id="r7-8-8" name="q7_8" value="8" />
+                            <input type="radio" id="r7-8-9" name="q7_8" value="9" />
+                            <input type="radio" id="r7-8-10" name="q7_8" value="10" />
+                            <label for="r7-8-0">0</label>
+                            <label for="r7-8-1">1</label>
+                            <label for="r7-8-2">2</label>
+                            <label for="r7-8-3">3</label>
+                            <label for="r7-8-4">4</label>
+                            <label for="r7-8-5">5</label>
+                            <label for="r7-8-6">6</label>
+                            <label for="r7-8-7">7</label>
+                            <label for="r7-8-8">8</label>
+                            <label for="r7-8-9">9</label>
+                            <label for="r7-8-10">10</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="submit-btn-wrapper">
+                <input type="submit" value="提交" />
+            </div>
+        </form>
+    </body>
+    <script src="./script/script.js"></script>
+</html>
