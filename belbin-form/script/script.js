@@ -17,7 +17,6 @@ updateAvailableOptions = () => {
             var radios = document.forms['main-form'].elements[`q${si}_${i}`]
 
             var max_available_option = remaining_values[si - 1] + +radios.value
-            console.log(i, max_available_option)
             for (var ri = 0, max = radios.length; ri < max; ri++) {
                 if (ri <= max_available_option) {
                     radios[ri].disabled = false
@@ -43,6 +42,8 @@ for (var si = 1; si <= 7; si++) {
 }
 
 checkForm = () => {
+    updateRemainingValue()
+
     var rtn_value = true
     var page_offsetX = null
 
@@ -122,7 +123,7 @@ checkForm = () => {
             document.getElementsByClassName('section')[si + 2].classList.remove('warning')
         }
     }
-    if (output_strs) {
+    if (remaining_values.reduce((a, b) => a + b, 0) != 0) {
         alert(output_strs.join('\n'))
     }
 
