@@ -9,6 +9,8 @@
     --input-submit-background-color: #395954;
     --input-submit-hovered-background-color: #568780;
     --input-submit-active-background-color: #2e4642;
+    --warning-color: #e86c6c;
+
     --max-form-width: 640px;
     --section-max-width: 640px;
     --input-text-width: 160px;
@@ -17,9 +19,10 @@
     --question-border-width: 2px;
     --section-border-radius: 15px;
     --question-border-badius: 8px;
-    --section-border-color: #eee;
+    --section-border-color: rgb(173, 173, 173);
     --question-border-color: #ffffff;
     --button-border-radius: 5px;
+    --warning-border-width: 3px;
 
     --page-margin: 100px;
     --section-margin: 60px;
@@ -31,6 +34,7 @@
     --title-font-size: 1.75rem;
     --comment-font-size: 0.85rem;
     --option-font-size: 0.95rem;
+    --warning-font-size: 0.75rem;
 }
 * {
     margin: 0px;
@@ -50,6 +54,9 @@ body {
 }
 b {
     font-size: inherit;
+}
+.hidden {
+    display: none;
 }
 /* ---------------------------- form --------------------------- */
 #main-form {
@@ -100,7 +107,7 @@ input[type='submit']:active {
 }
 
 /* -------------------------- section -------------------------- */
-fieldset.section {
+div.section {
     /* display: block; */
     border-radius: var(--section-border-radius);
     border-width: var(--section-border-width);
@@ -109,27 +116,37 @@ fieldset.section {
 }
 
 /* ---------------------- section's child ---------------------- */
-fieldset.section > * {
+div.section > * {
     padding: var(--section-child-padding);
 }
-fieldset.section > * {
+div.section > * {
     margin: 0 auto;
     padding: var(--section-child-padding);
 }
+div.section.warning {
+    box-sizing: content-box;
+    border: var(--warning-border-width) solid var(--warning-color);
+
+    /* TODO */
+    border-radius: calc(var(--warning-border-width) + var(--section-border-radius));
+}
 
 /* ----------------------- section title ----------------------- */
-fieldset.section > .title-wrapper {
+div.section > .title-wrapper {
     background-color: var(--title-background-color);
+    border: var(--section-border-width) solid var(--section-border-color);
+    border-radius: var(--section-border-radius) var(--section-border-radius) 0 0;
+    border-bottom: none;
 }
-fieldset.section > .title-wrapper > .title {
+div.section > .title-wrapper > .title {
     font-size: var(--title-font-size);
     font-weight: bold;
 }
-fieldset.section > .title-wrapper > .comment {
+div.section > .title-wrapper > .comment {
     font-size: var(--comment-font-size);
     margin-top: var(--content-margin);
 }
-fieldset.beginning-section > .title-wrapper {
+div.beginning-section > .title-wrapper {
     padding-bottom: var(--section-child-padding);
     background: var(--beginning-section-background-color);
     border: 1px solid rgb(51, 66, 60);
@@ -138,8 +155,11 @@ fieldset.beginning-section > .title-wrapper {
 }
 
 /* ---------------------- section content ---------------------- */
-fieldset.section > .content-wrapper {
+div.section > .content-wrapper {
     background-color: var(--content-background-color);
+    border: var(--section-border-width) solid var(--section-border-color);
+    border-radius: 0 0 var(--section-border-radius) var(--section-border-radius);
+    border-top: none;
 }
 
 /* -------------------------- question ------------------------- */
@@ -155,6 +175,17 @@ fieldset.section > .content-wrapper {
 }
 .question-wrapper > *:last-child {
     margin-bottom: 0;
+}
+.question-wrapper.warning {
+    border-color: var(--warning-color);
+}
+
+.question-wrapper.warning::before {
+    content: '此處為必填';
+    position: absolute;
+    transform: translateY(-35px);
+    font-size: var(--warning-font-size);
+    color: var(--warning-color);
 }
 .option-wrapper {
     display: grid;

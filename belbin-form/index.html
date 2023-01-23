@@ -17,7 +17,7 @@
             onsubmit="return checkForm()"
         >
             <input type="hidden" name="method" value="write" />
-            <fieldset class="section beginning-section">
+            <div class="section beginning-section">
                 <div class="title-wrapper">
                     <p class="title">Belbin 人格特質覺知量表</p>
                     <p class="comment">
@@ -26,9 +26,9 @@
                         >，每一個分數皆是整數，如有不適合您的描述可以給予零分，請避免給予一題 10 分或每題 1 分。
                     </p>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">基本資料</p>
                     <!-- <p class="comment"></p> -->
@@ -40,39 +40,39 @@
                     </div>
                     <div class="question-wrapper">
                         <p class="question">您的學號：</p>
-                        <input type="text" name="name" id="name" placeholder="您的回答" />
+                        <input type="text" name="id" id="id" placeholder="您的回答" />
                     </div>
                     <div class="question-wrapper">
                         <p class="question">我們想知道您的基礎背景對於人格特質的影響，請問您是什麼學系的學生?</p>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-0" name="department" value="" />
+                            <input type="radio" id="department-0" name="department" value="機械與材料工程學系" />
                             <label for="department-0">機械與材料工程學系</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-1" name="department" value="" />
-                            <label for="department-1">化學工程與生物科技學系 </label>
+                            <input type="radio" id="department-1" name="department" value="化學工程與生物科技學系" />
+                            <label for="department-1">化學工程與生物科技學系</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-2" name="department" value="" />
+                            <input type="radio" id="department-2" name="department" value="工程學院學士班 (大一不分系)" />
                             <label for="department-2">工程學院學士班 (大一不分系)</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-3" name="department" value="" />
+                            <input type="radio" id="department-3" name="department" value="工業設計學系" />
                             <label for="department-3">工業設計學系</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-4" name="department" value="" />
+                            <input type="radio" id="department-4" name="department" value="媒體設計學系 A 班 (互動媒體設計組)" />
                             <label for="department-4">媒體設計學系 A 班 (互動媒體設計組)</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-5" name="department" value="" />
+                            <input type="radio" id="department-5" name="department" value="媒體設計學系 B 班 (數位遊戲設計組)" />
                             <label for="department-5">媒體設計學系 B 班 (數位遊戲設計組)</label>
                         </div>
                         <div class="option-wrapper">
-                            <input type="radio" id="department-6" name="department" value="" />
+                            <input type="radio" id="department-others-radio" name="department" value="" />
                             <div class="label">
                                 <label for="department-6">其他：</label>
-                                <input type="text" name="department" id="" />
+                                <input type="text" name="" id="department-others" />
                             </div>
                         </div>
                     </div>
@@ -82,12 +82,12 @@
                             根據課程代碼（Y1000A~Y1000J），若是A班第一組請填A1<br />
                             【尚未分組請填無】
                         </p>
-                        <input type="text" name="name" id="name" placeholder="範例：Y1000A" />
+                        <input type="text" name="group" id="group" placeholder="A1" />
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">一、我認為我能為團隊做出的貢獻是：</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -310,9 +310,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">二、在團隊中，我可能有的弱點是：</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -535,9 +535,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">三、當我和其他人一起參與一項工作時:</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -760,9 +760,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">四、我在團隊中的特質是:</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -985,9 +985,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">五、我能在團隊合作過程中獲得滿足和成就感是因為:</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -1210,9 +1210,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">六、如果我在時間緊迫，團隊成員間不熟的情況下突然接到一件困難的任務時:</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -1435,9 +1435,9 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
-            <fieldset class="section">
+            <div class="section">
                 <div class="title-wrapper">
                     <p class="title">七、我在團隊合作過程中遇到問題時:</p>
                     <p class="comment">請先看過8個題項後 (A-H) 判斷其描述是否與您相符合，再予以評分。</p>
@@ -1660,7 +1660,7 @@
                         </div>
                     </div>
                 </div>
-            </fieldset>
+            </div>
 
             <div class="submit-btn-wrapper">
                 <input type="submit" value="提交" />
