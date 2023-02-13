@@ -96,18 +96,25 @@ checkForm = () => {
     }
 
     // check group
-    var group_object = document.getElementById('group')
-    if (!group_object.value.trim()) {
+    var group_value = null
+    var eng_ch_list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
+    for (var i = 0; i < 10; i++) {
+        var group_object = document.getElementById(`group-${eng_ch_list[i]}`)
+        if (group_object.checked) {
+            group_value = group_object.value
+            break
+        }
+    }
+    if (!group_value) {
         rtn_value = false
 
-        group_object.parentElement.classList.add('warning')
-        group_object.focus()
-
-        page_offsetX = page_offsetX == null ? group_object.parentElement.offsetTop : page_offsetX
+        document.getElementById('group-a').parentElement.parentElement.classList.add('warning')
+        page_offsetX = page_offsetX == null ? document.getElementById('group-a').parentElement.parentElement.offsetTop : page_offsetX
     } else {
-        group_object.parentElement.classList.remove('warning')
+        document.getElementById('group-a').parentElement.parentElement.classList.remove('warning')
     }
 
+    // check each question section
     var output_strs = []
     var number_ch_list = ['ㄧ', '二', '三', '四', '五', '六', '七']
 
