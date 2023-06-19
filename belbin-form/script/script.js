@@ -42,6 +42,8 @@ for (var si = 1; si <= 7; si++) {
 }
 
 checkForm = () => {
+    console.log('LOG: running checkForm function')
+
     updateRemainingValue()
 
     var rtn_value = true
@@ -75,7 +77,7 @@ checkForm = () => {
 
     // check department
     var department_value = null
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 5; i++) {
         var department_object = document.getElementById(`department-${i}`)
         if (department_object.checked) {
             department_value = department_object.value
