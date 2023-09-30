@@ -4,8 +4,8 @@ description: ''
 author: Li Chun Hua
 baseurl: ''
 url: 'https://tibittw.github.io'
-theme: jekyll-theme-clean-blog
-
+# theme: jekyll-theme-clean-blog
+remote_theme: 'StartBootStrap/startbootstrap-clean-blog-jekyll'
 # Social Profiles
 twitter_username:
 github_username: tibitTW
