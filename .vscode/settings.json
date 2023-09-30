@@ -1,5 +1,5 @@
 {
     "evenBetterToml.formatter.columnWidth": 80,
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 120
+    "editor.wordWrapColumn": 80
 }
