@@ -1,0 +1,30 @@
+// Override Bootstrap typography variables
+
+// @mixin font($font-family, $font-file) {
+//     @font-face {
+//         font-family: $font-family;
+//         src: url('../../../../fonts/GenSekiGothic-B.ttc') format('text/ttc');
+//         font-weight: normal;
+//         font-style: normal;
+//     }
+// }
+
+// @include font('GenMiu', '../../../../fonts/GenWanMin-M');
+// @include font('GenMiu-M', '../../../../fonts/GenWanMin-R');
+// @include font('源石', '../../../../fonts/GenSekiGothic-H');
+// @include font('源石-B', '../../../../fonts/GenSekiGothic-B');
+
+@font-face {
+    font-family: '源石';
+    src: url('/assets/fonts/GenSekiGothic-B.ttc');
+}
+@font-face {
+    font-family: 'GenMiu';
+    src: url('/assets/fonts/GenWanMin-R.ttc');
+}
+
+$font-family-base: 'GenMiu', 'Lora', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+$headings-font-family: '源石', 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';

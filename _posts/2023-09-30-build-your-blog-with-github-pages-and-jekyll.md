@@ -14,18 +14,11 @@ Github Pages 的[介紹頁面](https://pages.github.com/)中提到了 [Jekyll](h
 它以 Ruby 為基礎，可以把 `markdown` 文件編成靜態網站，也可以設計模板或套用其他人設計的 theme 來豐富外觀。
 事不宜遲，準備開工！
 
-以下內容大概會分成幾個章節：
-
-1. environment preparation
-    - Github pages
-    - Jekyll
-2. Jekyll Configuration
-
 ## Environment Preparation
 
 第一步就是使用 Github pages 來取得可以用的域名。照著下面的步驟就可以申請啦！
 
-首先當然需要準備一個 [Github](github.com) 帳號
+首先當然需要準備一個 [Github](github.com) 帳號，
 
 ## Jekyll Configuration
 
