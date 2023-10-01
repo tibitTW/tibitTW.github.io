@@ -8,19 +8,39 @@ background: ''
 
 今天聽完 podcast 之後決定自己也來寫個部落格，記錄自己的成長。第一篇文章就拿來記錄建立部落格的過程吧！
 
-原本有考慮過 Medium 等部落格網站，不過為了方便管理文章（或日後需要搬家），後來決定使用 `markdown` 文件記錄。
-由於之前有用過 Github pages，免費又好用當然就繼續用啦！
-Github Pages 的[介紹頁面](https://pages.github.com/)中提到了 [Jekyll](https://jekyllrb.com/) 框架，
-它以 Ruby 為基礎，可以把 `markdown` 文件編成靜態網站，也可以設計模板或套用其他人設計的主題來豐富外觀。
-事不宜遲，準備開工！
+原本有考慮過 Medium 等部落格網站，不過後來決定使用 `markdown` 文件記錄，方便日後管理文章（或需要把文章搬到其他地方）。由於之前有用過 Github pages，免費又好用當然就繼續用啦！Github Pages 的[介紹頁面](https://pages.github.com/)中提到了 [Jekyll](https://jekyllrb.com/) 框架，它以 Ruby 為基礎，可以把 `markdown` 文件編成靜態網站，也可以設計模板或套用其他人設計的主題來豐富外觀。事不宜遲，準備開工！
 
 ## Environment Preparation
 
-第一步就是使用 Github pages 來取得可以用的域名。照著下面的步驟就可以申請啦！
+第一步就是申請 Github pages 來取得可以用的域名。首先準備一個 [Github](https://github.com) 帳號，之後建立一個新的 repository，名稱取名為 `<your-name>.github.io`，Github 將會自動把這個 repo 當成靜態網站檔案放置的地方。之後把靜態網站的內容丟到這個 repo 內，push 上去之後 Github 就會自動幫我們部署，網域就是 `<your-name>.github.io`（像我就是 tibittw.github.io）。
 
-1. 首先當然需要準備一個 [Github](github.com) 帳號
+由於 Github pages 支援 Jekyll 框架，我們可以在 local 端使用 Jekyll 架好整個部落格環境，完成之後整包(?)丟上 Github，接著只要等部署完成就好。
 
-(流程待補充)
+Jekyll 的環境準備基本上照著它的 [documentation](https://jekyllrb.com/docs/) 照做就行，在安裝 Jekyll 前需要將下列準備好（來自它的官網）：
+
+-   Ruby 版本 2.5.0 以上
+-   RubyGems
+-   GCC and Make
+
+我用的是 Mac 環境，基本只要用 homebrew 安裝 Ruby 就完成。之後在剛剛建立好的 Github repo 內用下列指令就能安裝 Jekyll：
+
+```sh
+# install gems
+gem install jekyll bundler
+
+# create a new Jekyll site at ./myblog. You can change "myblog" to any name you want
+jekyll new myblog && cd myblog
+
+# run server
+bundle exec jekyll serve
+```
+
+過程中有一些需要注意的地方：
+
+1. 執行 gem install ... 時可能發生 Permission denied 的 error，這時記得加上 sudo
+2. 官網有提到使用 Ruby 3.0.0 以上的版本時，執行 bundle exec jekyll serve 可能會出錯，這時先執行 bundle add webrick 就可以解決
+
+如果到最後一步都能成功執行，那麼恭喜你，可以開始寫文章啦！
 
 ## Jekyll Configuration
 
