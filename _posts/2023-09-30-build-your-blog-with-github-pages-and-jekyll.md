@@ -37,15 +37,22 @@ bundle exec jekyll serve
 
 過程中有一些需要注意的地方：
 
-1. 執行 gem install ... 時可能發生 Permission denied 的 error，這時記得加上 sudo
-2. 官網有提到使用 Ruby 3.0.0 以上的版本時，執行 bundle exec jekyll serve 可能會出錯，這時先執行 bundle add webrick 就可以解決
+1. 執行 `gem install ...` 時可能發生 Permission denied 的 error，這時記得加上 `sudo`。
+2. 官網有提到使用 Ruby 3.0.0 以上的版本時，執行 `bundle exec jekyll serve` 可能會出錯，這時先執行 `bundle add webrick` 就可以解決
+3. 有時會遇到 gem 的版本問題，這時照著錯誤訊息更新到能用的版本就可以了[^1]
 
 如果到最後一步都能成功執行，那麼恭喜你，可以開始寫文章啦！
 
 ## Jekyll Configuration
 
+Jekyll 安裝好之後只是能動，一些內容的部分需要進行調整
+
+### File Structure
+
 Jekyll 也有需多主題可以使用，[jekyllthemes.io](https://jekyllthemes.io/) 這個網站內就有許多別人設計好的主題（我用的也是這裡找的），
 裡面包含付費跟免費的主題。我使用的主題是 [Clean Blog Jekyll theme](https://jekyllthemes.io/theme/startbootstrap-clean-blog-jekyll)，
+
+對於 Ruby 有些觀念不熟的可以參考[這篇]({% post_url 2023-10-01-ruby-basics %})
 
 ## 一些關於 ruby 的基本觀念
 
@@ -60,16 +67,5 @@ https://ithelp.ithome.com.tw/articles/10227960
 2. push 到 Github pages 後發生 deployment error
     1. 我的原因是 ruby 在執行 `bundle install` 時找不到我用的主題套件，後來找到下面連結這個解法就解決了
        https://stackoverflow.com/questions/70654418/github-pages-build-error-the-jekyll-theme-hydejack-theme-could-not-be-found
-3. 字體問題：如何使用自訂字體？
 
-    1. 把想用的字體檔案（`.ttf` / `.otf` 等）放到 `/assets/fonts/` 這個資料夾內
-    2. 在 `.scss` 檔案裡面用 `@font-face` 指定要用的字體名稱跟路徑
-        ```css
-        @font-face {
-            font-family: '<font-name>';
-            src: url('/assets/fonts/<font-file-name>');
-        }
-        ```
-    3. 完成
-
-    https://www.reddit.com/r/Jekyll/comments/83o680/jekyll_custom_fonts/
+[^1]: https://github.com/sass/sassc-ruby/issues/146#issuecomment-541364174
