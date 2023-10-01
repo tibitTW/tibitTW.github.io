@@ -35,6 +35,10 @@ jekyll new myblog && cd myblog
 bundle exec jekyll serve
 ```
 
+執行到最後一步後，可以開啟 `http://localhost:4000/`，成功畫面應該會長這樣：
+
+![tste](/assets/imgs/screenshot%202023-10-01%2014.25.30.png)
+
 過程中有一些需要注意的地方：
 
 1. 執行 `gem install ...` 時可能發生 Permission denied 的 error，這時記得加上 `sudo`。
@@ -45,27 +49,68 @@ bundle exec jekyll serve
 
 ## Jekyll Configuration
 
-Jekyll 安裝好之後只是能動，一些內容的部分需要進行調整
+Jekyll 安裝好之後只是能動，許多內容需要進行調整。`_config.yml` 中有些基本資料可以先改成自己的（下面是預設的內容）：
+
+```yaml
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+    Write an awesome description for your new site here. You can edit this
+    line in _config.yml. It will appear in your document head meta (for
+    Google search results) and in your feed.xml site description.
+baseurl: '' # the subpath of your site, e.g. /blog
+url: '' # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username: jekyll
+```
+
+Jekyll 也有需多主題可以使用，[jekyllthemes.io](https://jekyllthemes.io/) 這個網站內就有許多別人設計好的主題（我用的也是這裡找的），裡面包含付費跟免費的主題。我使用的主題是 [Clean Blog Jekyll theme](https://jekyllthemes.io/theme/startbootstrap-clean-blog-jekyll)，[下一篇文章]({% post_url 2023-10-01-jekyll-customization %})會專門介紹使用方式，我自己是有另外修改一些細節（字體、文字大小、縮排等等），讓整體更符合我的構想。
 
 ### File Structure
 
-Jekyll 也有需多主題可以使用，[jekyllthemes.io](https://jekyllthemes.io/) 這個網站內就有許多別人設計好的主題（我用的也是這裡找的），
-裡面包含付費跟免費的主題。我使用的主題是 [Clean Blog Jekyll theme](https://jekyllthemes.io/theme/startbootstrap-clean-blog-jekyll)，
+執行 `jekyll new myblog` 之後 Jekyll 會幫我們建立好資料夾跟檔案，了解他們的用途可以讓我們掌握整個網站的架構。
+對於 Ruby 不同檔案的功能的介紹可以參考[這篇](https://ithelp.ithome.com.tw/articles/10227960)，這邊我就不多做介紹（主要我也不是很懂 XD）。一開始經過 Jekyll 初始化後的檔案架構可能長這樣：
 
-對於 Ruby 有些觀念不熟的可以參考[這篇]({% post_url 2023-10-01-ruby-basics %})
+```txt
+├── 404.html
+├── Gemfile
+├── Gemfile.lock
+├── _config.yml
+├── _posts
+│   └── 2023-10-01-welcome-to-jekyll.markdown
+├── _site
+│   ├── 404.html
+│   ├── about
+│   │   └── index.html
+│   ├── assets
+│   │   ├── main.css
+│   │   ├── main.css.map
+│   │   └── minima-social-icons.svg
+│   ├── feed.xml
+│   ├── index.html
+│   └── jekyll
+│       └── update
+│           └── 2023
+│               └── 10
+│                   └── 01
+│                       └── welcome-to-jekyll.html
+├── about.markdown
+└── index.markdown
+```
 
-## 一些關於 ruby 的基本觀念
+我們主要寫的文章基本上都放在 `_posts/` 這個資料夾，其他外層的檔案如 `index.markdown` 與 `about.markdown` 等檔案則是首頁與 about 頁面的內容，Jekyll 會幫我們把整個網站（包含 `markdown` 文件）編譯，輸出到 `_site` 這個資料夾內（所以通常會把 `_site/` 加到 `.gitignore` 裡面，不需要上傳到 Github，上傳後 Github 在進行部署時就會編出來了）。
 
-https://ithelp.ithome.com.tw/articles/10227960
+文章的標題有固定的格式：`YYYY-MM-DD-filename.md`。內容的部分可以在開頭加上 front matter，定義這篇文章的屬性，像是：
 
-### 一些遇到的困難
+```txt
+---
+layout: post
+title: '文章標題'
+subtitle: '子標題'
+date: 2023-09-30 10:45:13 +0800
+---
+```
 
-1. 安裝 Jekyll 時發生的問題
-    1. 想執行 `jekyll serve` 時發生 error
-       https://github.com/sass/sassc-ruby/issues/146#issuecomment-541364174
-    2.
-2. push 到 Github pages 後發生 deployment error
-    1. 我的原因是 ruby 在執行 `bundle install` 時找不到我用的主題套件，後來找到下面連結這個解法就解決了
-       https://stackoverflow.com/questions/70654418/github-pages-build-error-the-jekyll-theme-hydejack-theme-could-not-be-found
+`layout` 可以當作要使用的模板，一般的文章都是使用 `post`。其他如標題、時間等會出現在首頁等文章列表內，看起來更像一個完整的部落格。
 
-[^1]: https://github.com/sass/sassc-ruby/issues/146#issuecomment-541364174
+[^1]: reference: [https://github.com/sass/sassc-ruby/issues/146#issuecomment-541364174](https://github.com/sass/sassc-ruby/issues/146#issuecomment-541364174)
