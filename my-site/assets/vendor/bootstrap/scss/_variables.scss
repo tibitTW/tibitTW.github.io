@@ -261,7 +261,7 @@ $embed-responsive-aspect-ratios: join(((21 9), (16 9), (4 3), (1 1)), $embed-res
 
 @font-face {
     font-family: 'CascadiaCodePL';
-    src: url('/assets/fonts/CascadiaCodePL-Regular.otf');
+    src: url('my-site/assets/fonts/CascadiaCodePL-Regular.otf');
 }
 
 // stylelint-disable value-keyword-case
