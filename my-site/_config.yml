@@ -2,7 +2,7 @@ title: CH's blog
 email: chunhua.2147483647@gmail.com
 description: ''
 author: Li Chun Hua
-baseurl: ''
+baseurl: '/my-site'
 url: 'https://tibittw.github.io'
 # theme: jekyll-theme-clean-blog
 remote_theme: 'StartBootStrap/startbootstrap-clean-blog-jekyll'
