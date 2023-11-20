@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Document</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;600&display=swap');
+
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            p {
+                font-family: 'Noto Sans TC', sans-serif;
+            }
+            body {
+                background-color: black;
+            }
+            .wrapper {
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-content: center;
+            }
+            .card {
+                box-sizing: border-box;
+                width: min(80vw, 80vh, 320px);
+                height: min(80vw, 80vh, 320px);
+                color: #ddd;
+                background: black;
+                padding: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;
+                border: 1px solid #888;
+            }
+            .card > p {
+                margin: 1rem;
+            }
+            .title,
+            .sign {
+                font-weight: 100;
+                font-size: 0.75rem;
+            }
+            .sign {
+                text-align: right;
+            }
+            .content {
+                font-weight: 600;
+                background: #811ff5;
+                background-image: radial-gradient(
+                        at 66% 8%,
+                        hsl(343, 96%, 45%) 0px,
+                        transparent 50%
+                    ),
+                    radial-gradient(
+                        at 0.8% 9.8%,
+                        hsl(5, 68%, 36%) 0px,
+                        transparent 50%
+                    ),
+                    radial-gradient(
+                        at 28.8% 81.9%,
+                        hsl(146, 59%, 54%) 0px,
+                        transparent 50%
+                    ),
+                    radial-gradient(
+                        at 90% 31%,
+                        hsl(306, 44%, 45%) 0px,
+                        transparent 50%
+                    ),
+                    radial-gradient(
+                        at 29% 3%,
+                        hsl(211, 71%, 45%) 0px,
+                        transparent 50%
+                    );
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: content-flow 2s ease-in-out 0s infinite
+                    alternate-reverse;
+            }
+            @keyframes content-flow {
+                from {
+                    opacity: 0.7;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="card">
+                <p class="title">To. 俊龍：</p>
+                <p class="content">
+                    生日快樂！生日代表又長大了一歲，希望你也能成為更成熟的人，找到未來的目標，並好好往這個方向前進。Stay
+                    hungry, stay foolish.
+                    不斷地虛心學習，相信你一定也能夠讓自己不斷的成長，一起加油！
+                </p>
+                <p class="sign">峮驊 2023-11-20</p>
+            </div>
+        </div>
+    </body>
+</html>
