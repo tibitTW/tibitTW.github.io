@@ -9,8 +9,8 @@
         <title>HBD</title>
         <style>
             body {
-                background-color: #111; /* Even darker background */
-                color: #f9f9f9; /* Light text */
+                background-color: #f9f9f9; /* Light background */
+                color: #111; /* Dark text */
             }
             .card-wrapper {
                 display: flex;
@@ -19,73 +19,190 @@
                 height: 100vh;
             }
             .card {
-                width: 300px;
-                border: 1px solid #444; /* Darker border */
+                width: 400px; /* Wider card width */
+                height: 500px;
+                border: 1px solid #ccc; /* Lighter border */
                 border-radius: 10px;
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Darker shadow */
-                background-color: #333; /* Dark gray background */
-            }
-            .card-border {
-                padding: 20px;
-                border: 1px solid #555; /* Darker border */
-                border-radius: 8px; /* Rounded corners */
-                background-color: #222; /* Even darker background */
-                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5); /* Darker shadow */
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Lighter shadow */
+                background-color: #fff; /* Light background */
+                padding: 40px; /* Increased padding */
+                display: flex; /* Added to vertically center the content */
+                flex-direction: column; /* Added to vertically center the content */
+                justify-content: center; /* Added to vertically center the content */
+                position: relative; /* Added for absolute positioning of the image */
             }
             .card-title {
                 font-size: 24px;
                 font-weight: bold;
                 margin-bottom: 10px;
-                color: #fff; /* Lighter text */
+                color: #333; /* Darker text */
             }
             .card-content {
                 font-size: 16px;
                 margin-bottom: 20px;
-                color: #ccc; /* Lighter text */
+                color: #555; /* Darker text */
             }
             .card-footer {
                 font-size: 14px;
-                color: #aaa; /* Lighter text */
+                color: #666; /* Darker text */
                 text-align: right;
                 margin-top: 20px; /* Space from the top */
+            }
+            .card-content p {
+                text-indent: 2em;
+            }
+            .card .playball-img {
+                position: absolute; /* Position the image absolutely */
+                top: 20px; /* Space from the top */
+                right: 20px; /* Space from the right */
+                width: 120px; /* Width of the image */
+                height: auto; /* Adjust height automatically */
+            }
+            .card .sun-img {
+                position: absolute; /* Position the image absolutely */
+                bottom: 20px; /* Space from the top */
+                left: 20px; /* Space from the right */
+                width: 120px; /* Width of the image */
+                height: auto; /* Adjust height automatically */
             }
         </style>
     </head>
     <body>
         <div class="card-wrapper">
             <div class="card">
-                <div class="card-border">
-                    <div class="card-title">Card Title</div>
-                    <div class="card-content">Card Content</div>
-                    <div class="card-footer">Card Footer</div>
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
                 </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
             </div>
         </div>
+
         <div class="card-wrapper">
             <div class="card">
-                <div class="card-border">
-                    <div class="card-title">Card Title</div>
-                    <div class="card-content">Card Content</div>
-                    <div class="card-footer">Card Footer</div>
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
                 </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
             </div>
         </div>
+
         <div class="card-wrapper">
             <div class="card">
-                <div class="card-border">
-                    <div class="card-title">Card Title</div>
-                    <div class="card-content">Card Content</div>
-                    <div class="card-footer">Card Footer</div>
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
                 </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
             </div>
         </div>
+
         <div class="card-wrapper">
             <div class="card">
-                <div class="card-border">
-                    <div class="card-title">Card Title</div>
-                    <div class="card-content">Card Content</div>
-                    <div class="card-footer">Card Footer</div>
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
                 </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
+                </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
+            </div>
+        </div>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
+                <div class="card-title">親愛的 David king</div>
+                <div class="card-content">
+                    <p>
+                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                    </p>
+                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
+                    <p>歲月靜好，願你美好如初。</p>
+                </div>
+                <div class="card-footer">艾霓愛你</div>
+                <img
+                    src="imgs/playball.jpg"
+                    alt="Play Ball"
+                    class="playball-img"
+                />
             </div>
         </div>
     </body>
