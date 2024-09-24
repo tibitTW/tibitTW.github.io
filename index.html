@@ -12,6 +12,9 @@
                 background-color: #f9f9f9; /* Light background */
                 color: #111; /* Dark text */
             }
+            p {
+                margin: 0.2em;
+            }
             .card-wrapper {
                 display: flex;
                 justify-content: center;
@@ -20,7 +23,6 @@
             }
             .card {
                 width: 400px; /* Wider card width */
-                height: 500px;
                 border: 1px solid #ccc; /* Lighter border */
                 border-radius: 10px;
                 box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Lighter shadow */
@@ -32,6 +34,7 @@
                 position: relative; /* Added for absolute positioning of the image */
             }
             .card-title {
+                margin-top: 20px;
                 font-size: 24px;
                 font-weight: bold;
                 margin-bottom: 10px;
@@ -47,18 +50,19 @@
                 color: #666; /* Darker text */
                 text-align: right;
                 margin-top: 20px; /* Space from the top */
+                margin-bottom: 20px;
             }
             .card-content p {
                 text-indent: 2em;
             }
-            .card .playball-img {
+            .card .sun-img {
                 position: absolute; /* Position the image absolutely */
                 top: 20px; /* Space from the top */
                 right: 20px; /* Space from the right */
-                width: 120px; /* Width of the image */
+                width: 80px; /* Width of the image */
                 height: auto; /* Adjust height automatically */
             }
-            .card .sun-img {
+            .card .playball-img {
                 position: absolute; /* Position the image absolutely */
                 bottom: 20px; /* Space from the top */
                 left: 20px; /* Space from the right */
@@ -75,8 +79,14 @@
                 <div class="card-content">
                     <p>
                         很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
+                    </p>
+                    <p>
                         我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
+                    </p>
+                    <p>
                         比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
+                    </p>
+                    <p>
                         我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
                     </p>
                     <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
@@ -94,18 +104,14 @@
         <div class="card-wrapper">
             <div class="card">
                 <img src="imgs/sun.png" alt="Sun" class="sun-img" />
-                <div class="card-title">親愛的 David king</div>
+                <div class="card-title">Dear 維慶</div>
                 <div class="card-content">
                     <p>
-                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
-                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
-                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
-                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                        恭喜你生日快樂，感謝這學期我們同家族合作，與義家的伙伴共學與共修，可以感受到你都比較正向想法，內心話不一定會說出來，可能我們也很少有機會聊到，這學期好好聊一下，也要讓自己實修更加強，勿放逸、勤修行，會有更多的收穫，自然的就可以跟他人分享，希望這一年我們都能成長，生命不一樣的突破，也恭喜你們家設壇，法船啟航，廣度有緣，教化眾生，也再次祝福你生日快樂
+                        身心安康。
                     </p>
-                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
-                    <p>歲月靜好，願你美好如初。</p>
                 </div>
-                <div class="card-footer">艾霓愛你</div>
+                <div class="card-footer">文棧</div>
                 <img
                     src="imgs/playball.jpg"
                     alt="Play Ball"
@@ -117,18 +123,15 @@
         <div class="card-wrapper">
             <div class="card">
                 <img src="imgs/sun.png" alt="Sun" class="sun-img" />
-                <div class="card-title">親愛的 David king</div>
+                <div class="card-title">慶哥 🎊生日快樂🎊</div>
                 <div class="card-content">
-                    <p>
-                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
-                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
-                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
-                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
-                    </p>
-                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
-                    <p>歲月靜好，願你美好如初。</p>
+                    <p>這次是進社福以來第一次同家族</p>
+                    <p>希望我們可以相處愉快😆😆</p>
+                    <p>也還是感謝慶哥在活動組的指導</p>
+                    <p>祝慶哥 福慧圓滿 身心安康</p>
+                    <p>事事順心 HAPPY BIRTHDAY🎂</p>
                 </div>
-                <div class="card-footer">艾霓愛你</div>
+                <div class="card-footer">明佑</div>
                 <img
                     src="imgs/playball.jpg"
                     alt="Play Ball"
@@ -136,22 +139,17 @@
                 />
             </div>
         </div>
-
         <div class="card-wrapper">
             <div class="card">
                 <img src="imgs/sun.png" alt="Sun" class="sun-img" />
-                <div class="card-title">親愛的 David king</div>
+                <div class="card-title">DVK</div>
                 <div class="card-content">
                     <p>
-                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
-                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
-                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
-                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                        祝你生日快樂!沒有想過我們還會在同一個家族，覺得很神奇，這學期感覺你變得很忙，只能跟你說加油(strong
+                        arm)相信現在的努力都是為了得到美好的未來？雖然週六上課那個感覺真的壓力很大，希望你還是可以抽空去好好運動喔！最後祝福戴家能夠香火鼎盛，佛堂光明遍照整個茄萣👍
                     </p>
-                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
-                    <p>歲月靜好，願你美好如初。</p>
                 </div>
-                <div class="card-footer">艾霓愛你</div>
+                <div class="card-footer">書羽</div>
                 <img
                     src="imgs/playball.jpg"
                     alt="Play Ball"
@@ -159,45 +157,16 @@
                 />
             </div>
         </div>
-
         <div class="card-wrapper">
             <div class="card">
                 <img src="imgs/sun.png" alt="Sun" class="sun-img" />
-                <div class="card-title">親愛的 David king</div>
+                <div class="card-title">維慶生日快樂~~</div>
                 <div class="card-content">
                     <p>
-                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
-                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
-                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
-                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
+                        這學期很榮幸可以和社福活歷史同一家族，了解過去大家所付出的點滴，更能把握現在修辦的因緣，不斷深入、內化，一起開創未來無限的慧命，祝福這一年家族都能突破成長，也先恭賀維慶家設立佛堂，弘法利生，最後祝身體健康、福慧圓滿
                     </p>
-                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
-                    <p>歲月靜好，願你美好如初。</p>
                 </div>
-                <div class="card-footer">艾霓愛你</div>
-                <img
-                    src="imgs/playball.jpg"
-                    alt="Play Ball"
-                    class="playball-img"
-                />
-            </div>
-        </div>
-
-        <div class="card-wrapper">
-            <div class="card">
-                <img src="imgs/sun.png" alt="Sun" class="sun-img" />
-                <div class="card-title">親愛的 David king</div>
-                <div class="card-content">
-                    <p>
-                        很開心這學期能和你同一個家族，也謝謝你過去的對我的照顧和幫忙，何其有幸能和一個情緒這麼穩定的人做朋友，想到都會覺得很興奮。
-                        我最近總覺得詞不達意，甚至覺得會不會跟不上大家而焦慮，想了又想，急什麼呢？我仍然走在修行的路上沒有放棄過啊！
-                        比起怕被遺忘而產生的生存焦慮，過度曝光到面目模糊，看不清楚自己本來的樣貌和輪廓，我寧願在安靜時，等待時間，反覆沉澱再慢慢顯影。
-                        我很喜歡現在自己的樣子，也希望維慶也喜歡現在自己的樣子喔！
-                    </p>
-                    <p>生日快樂，很像沒什麼能夠給你的，就給你我滿滿的祝福。</p>
-                    <p>歲月靜好，願你美好如初。</p>
-                </div>
-                <div class="card-footer">艾霓愛你</div>
+                <div class="card-footer">丁丁</div>
                 <img
                     src="imgs/playball.jpg"
                     alt="Play Ball"
