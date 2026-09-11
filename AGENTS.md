@@ -51,6 +51,9 @@ dev --(rebase/merge)--> main --(.github/workflows/deploy.yml)--> builds ./dist -
 
 - Keep formatting-only changes in their own commit and add its hash to `.git-blame-ignore-revs`.
   Do not mix formatting with functional changes in the same commit.
+- A **pre-commit hook** (Husky + lint-staged) automatically runs Prettier on staged files,
+  so files are formatted before each commit. Run `npm install` once to enable it
+  (the `prepare` script installs the hook).
 
 ## Conventions
 
