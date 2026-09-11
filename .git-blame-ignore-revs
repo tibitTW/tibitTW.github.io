@@ -9,3 +9,6 @@
 
 # style: format files with prettier
 84be888d643f8313b1cf2536506473e6630b1de5
+
+# style: format astro files with prettier
+d7a1df66f6996dd488ddc6dbd741caeb50d73091
