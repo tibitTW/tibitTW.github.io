@@ -1,0 +1,11 @@
+# git blame ignore list
+#
+# Formatting-only commits listed here are skipped by `git blame`
+# when the blame.ignoreRevsFile config is enabled:
+#
+#   git config blame.ignoreRevsFile .git-blame-ignore-revs
+#
+# See https://gist.github.com/kateinoigakukun/b0bc920e587851bfffa98b9e279175f2
+
+# style: format files with prettier
+84be888d643f8313b1cf2536506473e6630b1de5
