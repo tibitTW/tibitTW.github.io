@@ -2,7 +2,7 @@ name: Build and Push
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -17,8 +17,8 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '22.12.0'
-          cache: 'npm'
+          node-version: "22.12.0"
+          cache: "npm"
 
       - name: Install dependencies
         run: npm ci
