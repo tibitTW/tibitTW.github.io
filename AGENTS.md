@@ -37,6 +37,14 @@ dev --(rebase/merge)--> main --(.github/workflows/deploy.yml)--> builds ./dist -
 | `npm run build`   | Type-check (`astro check`) + build to `dist` |
 | `npm run preview` | Preview the production build locally         |
 
+- **Do not run `npm run dev` (or any long-running server) yourself.** The user usually keeps a
+  hot-reload dev server running and checks the browser directly, so a server started by the agent
+  just collides with it (port `4321` déjà vu) and wastes time. Hand off testing/visual checks to
+  the user instead:
+  - Make the change, then tell the user what to look at (route/URL + expected result).
+  - If you need automated verification, prefer `npm run build` (`astro check` + build).
+  - Only start a dev server if the user explicitly asks for it, and ask which port to use.
+
 ## Formatting
 
 - Formatter: **Prettier** (`npx prettier --write .`).
