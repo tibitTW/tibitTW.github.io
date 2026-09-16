@@ -5,7 +5,8 @@
       "files": "*.astro",
       "options": {
         "parser": "astro",
-        "useTabs": true
+        "useTabs": false,
+        "tabWidth": 4
       }
     }
   ]
