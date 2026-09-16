@@ -1,0 +1,127 @@
+---
+/**
+ * TEMPORARY component — a navbar styled after the macOS Finder path bar
+ * (the segmented breadcrumb strip at the bottom of a Finder window).
+ *
+ * Usage:
+ *   <Navbar />                             // items derived from Astro.url.pathname
+ *   <Navbar items={[{ label: "Home", href: "/" }, { label: "About", href: "/about" }]} />
+ *
+ * TODO: this is a placeholder for the real navigation — replace when the
+ * site structure is settled. Delete freely.
+ */
+export interface PathItem {
+    label: string;
+    href?: string;
+    /** Small glyph shown before the label, Finder-style. */
+    icon?: "home" | "folder";
+}
+
+interface Props {
+    /** Breadcrumb segments, left to right. The last one is the current page. */
+    items?: PathItem[];
+    class?: string;
+}
+
+const LABELS: Record<string, string> = {
+    projects: "Projects",
+    writing: "Writing",
+    about: "About",
+    contact: "Contact",
+};
+
+function fromPathname(pathname: string): PathItem[] {
+    const segments = pathname.split("/").filter(Boolean);
+    const items: PathItem[] = [{ label: "Home", href: "/", icon: "home" }];
+    let acc = "";
+    for (const segment of segments) {
+        acc += `/${segment}`;
+        items.push({
+            label:
+                LABELS[segment] ??
+                decodeURIComponent(segment).replace(/-/g, " "),
+            href: acc,
+            icon: "folder",
+        });
+    }
+    return items;
+}
+
+const { items = fromPathname(Astro.url.pathname), class: className = "" } =
+    Astro.props;
+const lastIndex = items.length - 1;
+---
+
+<nav
+    aria-label="Breadcrumb"
+    class:list={[
+        "fixed bottom-4 left-1/2 z-50 max-w-[calc(100vw-2rem)] -translate-x-1/2",
+        className,
+    ]}
+>
+    <ol class="flex items-center gap-0.5 rounded-lg border border-black/10 bg-white/70 px-1.5 py-1 shadow-lg shadow-black/5 backdrop-blur-xl dark:border-white/15 dark:bg-neutral-800/60">
+        {items.map((item, index) => {
+            const isLast = index === lastIndex;
+            const Tag = isLast || !item.href ? "span" : "a";
+            return (
+                <li class="flex min-w-0 items-center gap-0.5">
+                    {index > 0 && (
+                        <svg
+                            class="h-3 w-3 shrink-0 text-black/25 dark:text-white/30"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            aria-hidden="true"
+                        >
+                            <path d="m9 6 6 6-6 6" />
+                        </svg>
+                    )}
+                    <Tag
+                        href={Tag === "a" ? item.href : undefined}
+                        aria-current={isLast ? "page" : undefined}
+                        class:list={[
+                            "inline-flex min-w-0 items-center gap-1.5 rounded-md px-2 py-0.5 text-xs transition-colors",
+                            isLast
+                                ? "font-medium text-neutral-900 dark:text-neutral-100"
+                                : "text-neutral-600 hover:bg-black/5 hover:text-neutral-900 dark:text-neutral-300 dark:hover:bg-white/10 dark:hover:text-white",
+                        ]}
+                    >
+                        {item.icon === "home" && (
+                            <svg
+                                class="h-3.5 w-3.5 shrink-0 opacity-70"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path d="M3.5 10.5 12 3.5l8.5 7" />
+                                <path d="M5.5 9.5V20h13V9.5" />
+                            </svg>
+                        )}
+                        {item.icon === "folder" && (
+                            <svg
+                                class="h-3.5 w-3.5 shrink-0 opacity-70"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="1.8"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                aria-hidden="true"
+                            >
+                                <path d="M3 7.5A1.5 1.5 0 0 1 4.5 6h4l1.5 2h9.5A1.5 1.5 0 0 1 21 9.5v7a1.5 1.5 0 0 1-1.5 1.5h-15A1.5 1.5 0 0 1 3 16.5v-9Z" />
+                            </svg>
+                        )}
+                        <span class="truncate">{item.label}</span>
+                    </Tag>
+                </li>
+            );
+        })}
+    </ol>
+</nav>
