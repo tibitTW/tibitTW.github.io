@@ -25,3 +25,5 @@ pnpm-debug.log*
 
 # vscode setting folder
 .vscode/
+# original font sources (regenerate public/fonts with scripts/build-fonts.sh)
+fonts-src/
