@@ -15,3 +15,6 @@ d7a1df66f6996dd488ddc6dbd741caeb50d73091
 
 # style: format config files with prettier
 6056f32af8ea85e98aecdccdbd34cbfe6a878e48
+
+# style: use 4-space indentation for astro files
+c537e4343e8fb774d53d80353d332e568d2d02b2
